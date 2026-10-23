@@ -1,0 +1,22 @@
+[package]
+name = "discofm-fit"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+discofm-chip.workspace = true
+discofm-engine.workspace = true
+discofm-audio.workspace = true
+discofm-analysis.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+wgpu = { version = "30.0.1", default-features = false, features = ["std", "dx12", "vulkan", "metal", "wgsl"] }
+pollster = "0.4.0"
+bytemuck = "1.25.0"
+rayon = "1.11"
+realfft = "3.5"
+
+[dev-dependencies]
+serde_json.workspace = true
+discofm-reference.workspace = true

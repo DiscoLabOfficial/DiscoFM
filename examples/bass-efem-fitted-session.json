@@ -1,0 +1,4575 @@
+{
+  "version": 1,
+  "instrument": {
+    "operators": [
+      {
+        "dt": 1,
+        "mul": 10,
+        "tl": 117,
+        "rs": 2,
+        "ar": 24,
+        "d1r": 13,
+        "d2r": 11,
+        "sl": 0,
+        "rr": 12,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 4,
+        "mul": 1,
+        "tl": 48,
+        "rs": 2,
+        "ar": 28,
+        "d1r": 12,
+        "d2r": 0,
+        "sl": 0,
+        "rr": 8,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 24,
+        "rs": 1,
+        "ar": 30,
+        "d1r": 0,
+        "d2r": 2,
+        "sl": 2,
+        "rr": 3,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 5,
+        "mul": 1,
+        "tl": 0,
+        "rs": 0,
+        "ar": 30,
+        "d1r": 1,
+        "d2r": 5,
+        "sl": 0,
+        "rr": 7,
+        "am": false,
+        "ssg": 0
+      }
+    ],
+    "channel": {
+      "algorithm": 0,
+      "feedback": 1,
+      "ams": 0,
+      "fms": 0,
+      "left": true,
+      "right": true
+    },
+    "global": {
+      "lfo_enabled": false,
+      "lfo_rate": 0
+    },
+    "channel3_special": null,
+    "audition": {
+      "velocity_tl_depth": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audition": {
+    "note": 36,
+    "tuning_cents": 2.3188234835918315,
+    "velocity": 127,
+    "key_on_seconds": 0.2,
+    "total_seconds": 0.2383219954648526,
+    "channel": 1,
+    "profile": "YM2612_DISCRETE",
+    "clock": "Ntsc"
+  },
+  "reference_path": "references/BASS_EfEm_C2.wav",
+  "reference_analysis": {
+    "options": {
+      "channel": "Mix",
+      "remove_dc": true,
+      "normalize": false,
+      "trim_silence": true,
+      "fft_size": 2048,
+      "start_seconds": 0.0,
+      "end_seconds": 0.2383219954648526,
+      "pitch_override_hz": null
+    },
+    "note_on_seconds": 0.0,
+    "key_off_seconds": 0.2
+  },
+  "fitting": {
+    "config": {
+      "mode": "Advanced",
+      "seed": 2612,
+      "evaluations": 1024,
+      "population": 16,
+      "candidates": 6,
+      "differential_weight": 0.7,
+      "crossover": 0.8,
+      "max_seconds": 8.0,
+      "fit_special_frequencies": false,
+      "weights": {
+        "log_spectral": 1.0,
+        "convergence": 1.0,
+        "envelope": 1.5,
+        "harmonic": 0.25,
+        "transient": 0.35,
+        "modulation": 0.25,
+        "tail": 0.5
+      },
+      "match_level": true,
+      "compute": "Cpu"
+    },
+    "locks": [],
+    "runs": [
+      {
+        "status": "Completed",
+        "config": {
+          "mode": "Advanced",
+          "seed": 2612,
+          "evaluations": 512,
+          "population": 16,
+          "candidates": 6,
+          "differential_weight": 0.7,
+          "crossover": 0.8,
+          "max_seconds": 8.0,
+          "fit_special_frequencies": false,
+          "weights": {
+            "log_spectral": 1.0,
+            "convergence": 1.0,
+            "envelope": 1.5,
+            "harmonic": 0.25,
+            "transient": 0.35,
+            "modulation": 0.25,
+            "tail": 0.5
+          },
+          "match_level": true,
+          "compute": "Cpu"
+        },
+        "locks": [],
+        "initial": {
+          "operators": [
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 24,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            }
+          ],
+          "channel": {
+            "algorithm": 7,
+            "feedback": 0,
+            "ams": 0,
+            "fms": 0,
+            "left": true,
+            "right": true
+          },
+          "global": {
+            "lfo_enabled": false,
+            "lfo_rate": 0
+          },
+          "channel3_special": null,
+          "audition": {
+            "velocity_tl_depth": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "context": {
+          "loss_version": 2,
+          "fingerprint": "027f44604f84d795",
+          "sample_rate": 24000,
+          "frames": 5720,
+          "reference_onset_seconds": 0.0,
+          "reference_start_seconds": 0.0,
+          "reference_end_seconds": 0.2383219954648526,
+          "reference_gain": 1.0,
+          "pitch_hz": 65.58313490814433,
+          "audition": {
+            "note": 36,
+            "tuning_cents": 4.671895583182833,
+            "velocity": 127,
+            "key_on_seconds": 0.2,
+            "total_seconds": 0.2383219954648526,
+            "channel": 1,
+            "profile": "YM2612_DISCRETE",
+            "clock": "Ntsc"
+          }
+        },
+        "initial_loss": {
+          "recording_gain": 38.04470879103309,
+          "total": 0.3506615475638044,
+          "log_spectral": 0.16935046860647876,
+          "convergence": 0.7537972721248156,
+          "envelope": 0.15554194014009146,
+          "harmonic": 1.1449356881182144,
+          "transient": 0.029512489453594748,
+          "modulation": 0.10993626860705498,
+          "tail": 0.4404009885058884
+        },
+        "candidates": [
+          {
+            "evaluation": 504,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 23,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 2,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 71.33313056451513,
+              "total": 0.20110821311979235,
+              "log_spectral": 0.2719735090532901,
+              "convergence": 0.46055062253012014,
+              "envelope": 0.06159537515923176,
+              "harmonic": 0.3252626346912705,
+              "transient": 0.01993750518702111,
+              "modulation": 0.14015558491737762,
+              "tail": 0.05424991518223118
+            }
+          },
+          {
+            "evaluation": 508,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 23,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 1,
+                "feedback": 2,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 71.33313056451513,
+              "total": 0.20110821311979235,
+              "log_spectral": 0.2719735090532901,
+              "convergence": 0.46055062253012014,
+              "envelope": 0.06159537515923176,
+              "harmonic": 0.3252626346912705,
+              "transient": 0.01993750518702111,
+              "modulation": 0.14015558491737762,
+              "tail": 0.05424991518223118
+            }
+          },
+          {
+            "evaluation": 509,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 23,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 71.33313056451513,
+              "total": 0.20110821311979235,
+              "log_spectral": 0.2719735090532901,
+              "convergence": 0.46055062253012014,
+              "envelope": 0.06159537515923176,
+              "harmonic": 0.3252626346912705,
+              "transient": 0.01993750518702111,
+              "modulation": 0.14015558491737762,
+              "tail": 0.05424991518223118
+            }
+          },
+          {
+            "evaluation": 510,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 23,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 3,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 71.33313056451513,
+              "total": 0.20110821311979235,
+              "log_spectral": 0.2719735090532901,
+              "convergence": 0.46055062253012014,
+              "envelope": 0.06159537515923176,
+              "harmonic": 0.3252626346912705,
+              "transient": 0.01993750518702111,
+              "modulation": 0.14015558491737762,
+              "tail": 0.05424991518223118
+            }
+          },
+          {
+            "evaluation": 512,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 23,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 2,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": true,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 71.33313056451513,
+              "total": 0.20110821311979235,
+              "log_spectral": 0.2719735090532901,
+              "convergence": 0.46055062253012014,
+              "envelope": 0.06159537515923176,
+              "harmonic": 0.3252626346912705,
+              "transient": 0.01993750518702111,
+              "modulation": 0.14015558491737762,
+              "tail": 0.05424991518223118
+            }
+          },
+          {
+            "evaluation": 500,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 9,
+                  "tl": 126,
+                  "rs": 1,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 3,
+                  "tl": 69,
+                  "rs": 2,
+                  "ar": 29,
+                  "d1r": 12,
+                  "d2r": 2,
+                  "sl": 0,
+                  "rr": 5,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 22,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 35,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 1,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 2,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 72.63798289539461,
+              "total": 0.201840340555121,
+              "log_spectral": 0.2724972121638817,
+              "convergence": 0.4676078086754368,
+              "envelope": 0.060316809158450675,
+              "harmonic": 0.3274474329684299,
+              "transient": 0.018667527233966173,
+              "modulation": 0.14193484412386334,
+              "tail": 0.04893242662076187
+            }
+          }
+        ],
+        "history": [
+          {
+            "evaluation": 1,
+            "stage": "Coarse",
+            "best": 0.3506615475638044,
+            "current": 0.3506615475638044
+          },
+          {
+            "evaluation": 2,
+            "stage": "Coarse",
+            "best": 0.3483306126549602,
+            "current": 0.3483306126549602
+          },
+          {
+            "evaluation": 3,
+            "stage": "Coarse",
+            "best": 0.3480394614398421,
+            "current": 0.3480394614398421
+          },
+          {
+            "evaluation": 4,
+            "stage": "Coarse",
+            "best": 0.34389100285003693,
+            "current": 0.34389100285003693
+          },
+          {
+            "evaluation": 5,
+            "stage": "Coarse",
+            "best": 0.34378554038064696,
+            "current": 0.34378554038064696
+          },
+          {
+            "evaluation": 8,
+            "stage": "Coarse",
+            "best": 0.34378554038064696,
+            "current": 0.36091326653111294
+          },
+          {
+            "evaluation": 12,
+            "stage": "Coarse",
+            "best": 0.3397357098937391,
+            "current": 0.3397357098937391
+          },
+          {
+            "evaluation": 16,
+            "stage": "Coarse",
+            "best": 0.3397357098937391,
+            "current": 0.4614810806007703
+          },
+          {
+            "evaluation": 24,
+            "stage": "Coarse",
+            "best": 0.3397357098937391,
+            "current": 0.4744350494498748
+          },
+          {
+            "evaluation": 32,
+            "stage": "Coarse",
+            "best": 0.3397357098937391,
+            "current": 0.47260571331067797
+          },
+          {
+            "evaluation": 34,
+            "stage": "Coarse",
+            "best": 0.3223424470458516,
+            "current": 0.3223424470458516
+          },
+          {
+            "evaluation": 36,
+            "stage": "Coarse",
+            "best": 0.2779667961672491,
+            "current": 0.2779667961672491
+          },
+          {
+            "evaluation": 37,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.27746794523431206
+          },
+          {
+            "evaluation": 40,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.4328788024211034
+          },
+          {
+            "evaluation": 48,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.4577582701843654
+          },
+          {
+            "evaluation": 56,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.36091326653111294
+          },
+          {
+            "evaluation": 64,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.48578401541728
+          },
+          {
+            "evaluation": 72,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.5056375749785013
+          },
+          {
+            "evaluation": 80,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.5296905813925304
+          },
+          {
+            "evaluation": 88,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.4245224010851566
+          },
+          {
+            "evaluation": 96,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.504504888447187
+          },
+          {
+            "evaluation": 104,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.5937306181809593
+          },
+          {
+            "evaluation": 112,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.3981177532860702
+          },
+          {
+            "evaluation": 120,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.4119893000605239
+          },
+          {
+            "evaluation": 128,
+            "stage": "Coarse",
+            "best": 0.27746794523431206,
+            "current": 0.3384173210410873
+          },
+          {
+            "evaluation": 131,
+            "stage": "Coarse",
+            "best": 0.265603564826911,
+            "current": 0.265603564826911
+          },
+          {
+            "evaluation": 132,
+            "stage": "Coarse",
+            "best": 0.2544582219186687,
+            "current": 0.2544582219186687
+          },
+          {
+            "evaluation": 136,
+            "stage": "Coarse",
+            "best": 0.2544582219186687,
+            "current": 0.43010328138266896
+          },
+          {
+            "evaluation": 144,
+            "stage": "Coarse",
+            "best": 0.2544582219186687,
+            "current": 0.4370657998094439
+          },
+          {
+            "evaluation": 152,
+            "stage": "Coarse",
+            "best": 0.2544582219186687,
+            "current": 0.28709951529366057
+          },
+          {
+            "evaluation": 154,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.2544582219186687
+          },
+          {
+            "evaluation": 160,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.32031965341047125
+          },
+          {
+            "evaluation": 168,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.30770204334476187
+          },
+          {
+            "evaluation": 176,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.5602233185269438
+          },
+          {
+            "evaluation": 184,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.2964973170517332
+          },
+          {
+            "evaluation": 192,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.26889659552491896
+          },
+          {
+            "evaluation": 200,
+            "stage": "Envelopes",
+            "best": 0.2544582219186687,
+            "current": 0.30691772567540987
+          },
+          {
+            "evaluation": 203,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.2380775673960448
+          },
+          {
+            "evaluation": 208,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.2737565959699059
+          },
+          {
+            "evaluation": 216,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.3238157295466645
+          },
+          {
+            "evaluation": 224,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.3737024545844439
+          },
+          {
+            "evaluation": 232,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.32250885296143056
+          },
+          {
+            "evaluation": 240,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.4671157266985655
+          },
+          {
+            "evaluation": 248,
+            "stage": "Envelopes",
+            "best": 0.2380775673960448,
+            "current": 0.38094724983795475
+          },
+          {
+            "evaluation": 251,
+            "stage": "Envelopes",
+            "best": 0.23501212276380132,
+            "current": 0.23501212276380132
+          },
+          {
+            "evaluation": 253,
+            "stage": "Envelopes",
+            "best": 0.2278185666188733,
+            "current": 0.2278185666188733
+          },
+          {
+            "evaluation": 256,
+            "stage": "Envelopes",
+            "best": 0.2278185666188733,
+            "current": 0.5127310298009173
+          },
+          {
+            "evaluation": 264,
+            "stage": "Envelopes",
+            "best": 0.2278185666188733,
+            "current": 0.3432249603670355
+          },
+          {
+            "evaluation": 272,
+            "stage": "Envelopes",
+            "best": 0.2278185666188733,
+            "current": 0.4753374423461678
+          },
+          {
+            "evaluation": 280,
+            "stage": "Envelopes",
+            "best": 0.2278185666188733,
+            "current": 0.33815380312875815
+          },
+          {
+            "evaluation": 283,
+            "stage": "Envelopes",
+            "best": 0.22318661059311318,
+            "current": 0.22318661059311318
+          },
+          {
+            "evaluation": 288,
+            "stage": "Envelopes",
+            "best": 0.22318661059311318,
+            "current": 0.2901985809811809
+          },
+          {
+            "evaluation": 296,
+            "stage": "Envelopes",
+            "best": 0.22318661059311318,
+            "current": 0.3936125734032068
+          },
+          {
+            "evaluation": 304,
+            "stage": "Envelopes",
+            "best": 0.22318661059311318,
+            "current": 0.7067224886788307
+          },
+          {
+            "evaluation": 308,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.22318661059311318
+          },
+          {
+            "evaluation": 312,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.2830214926083028
+          },
+          {
+            "evaluation": 320,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.2735300299768468
+          },
+          {
+            "evaluation": 328,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.3060849533481996
+          },
+          {
+            "evaluation": 336,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.2544582219186687
+          },
+          {
+            "evaluation": 344,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.30501685238688464
+          },
+          {
+            "evaluation": 352,
+            "stage": "Modulation",
+            "best": 0.22318661059311318,
+            "current": 0.2948358915244293
+          },
+          {
+            "evaluation": 359,
+            "stage": "Refine",
+            "best": 0.21510378718446188,
+            "current": 0.21510378718446188
+          },
+          {
+            "evaluation": 360,
+            "stage": "Refine",
+            "best": 0.21510378718446188,
+            "current": 0.22318661059311318
+          },
+          {
+            "evaluation": 368,
+            "stage": "Refine",
+            "best": 0.21510378718446188,
+            "current": 0.21510378718446188
+          },
+          {
+            "evaluation": 369,
+            "stage": "Refine",
+            "best": 0.2150935300896959,
+            "current": 0.2150935300896959
+          },
+          {
+            "evaluation": 375,
+            "stage": "Refine",
+            "best": 0.21481885615340698,
+            "current": 0.21481885615340698
+          },
+          {
+            "evaluation": 376,
+            "stage": "Refine",
+            "best": 0.21481885615340698,
+            "current": 0.2150935300896959
+          },
+          {
+            "evaluation": 377,
+            "stage": "Refine",
+            "best": 0.21473612981522885,
+            "current": 0.21473612981522885
+          },
+          {
+            "evaluation": 384,
+            "stage": "Refine",
+            "best": 0.21473612981522885,
+            "current": 0.21494957996303587
+          },
+          {
+            "evaluation": 385,
+            "stage": "Refine",
+            "best": 0.21469840343272445,
+            "current": 0.21469840343272445
+          },
+          {
+            "evaluation": 390,
+            "stage": "Refine",
+            "best": 0.21379620095645116,
+            "current": 0.21379620095645116
+          },
+          {
+            "evaluation": 391,
+            "stage": "Refine",
+            "best": 0.20868049016463025,
+            "current": 0.20868049016463025
+          },
+          {
+            "evaluation": 392,
+            "stage": "Refine",
+            "best": 0.20868049016463025,
+            "current": 0.21379620095645116
+          },
+          {
+            "evaluation": 397,
+            "stage": "Refine",
+            "best": 0.20811907773695554,
+            "current": 0.20811907773695554
+          },
+          {
+            "evaluation": 399,
+            "stage": "Refine",
+            "best": 0.20700912311023606,
+            "current": 0.20700912311023606
+          },
+          {
+            "evaluation": 400,
+            "stage": "Refine",
+            "best": 0.20700912311023606,
+            "current": 0.20811907773695554
+          },
+          {
+            "evaluation": 408,
+            "stage": "Refine",
+            "best": 0.20700912311023606,
+            "current": 0.20700912311023606
+          },
+          {
+            "evaluation": 416,
+            "stage": "Refine",
+            "best": 0.20700912311023606,
+            "current": 0.20700912311023606
+          },
+          {
+            "evaluation": 424,
+            "stage": "Refine",
+            "best": 0.20700912311023606,
+            "current": 0.20700912311023606
+          },
+          {
+            "evaluation": 432,
+            "stage": "Refine",
+            "best": 0.20687898534046956,
+            "current": 0.20687898534046956
+          },
+          {
+            "evaluation": 439,
+            "stage": "Refine",
+            "best": 0.2065466470720327,
+            "current": 0.2065466470720327
+          },
+          {
+            "evaluation": 440,
+            "stage": "Refine",
+            "best": 0.2065466470720327,
+            "current": 0.20687898534046956
+          },
+          {
+            "evaluation": 448,
+            "stage": "Refine",
+            "best": 0.2065466470720327,
+            "current": 0.2067998557996393
+          },
+          {
+            "evaluation": 449,
+            "stage": "Refine",
+            "best": 0.20457602745907574,
+            "current": 0.20457602745907574
+          },
+          {
+            "evaluation": 454,
+            "stage": "Refine",
+            "best": 0.20343160150877215,
+            "current": 0.20343160150877215
+          },
+          {
+            "evaluation": 456,
+            "stage": "Refine",
+            "best": 0.20343160150877215,
+            "current": 0.20343160150877215
+          },
+          {
+            "evaluation": 459,
+            "stage": "Refine",
+            "best": 0.2023431500184151,
+            "current": 0.2023431500184151
+          },
+          {
+            "evaluation": 464,
+            "stage": "Refine",
+            "best": 0.2023431500184151,
+            "current": 0.2023431500184151
+          },
+          {
+            "evaluation": 472,
+            "stage": "Refine",
+            "best": 0.2023431500184151,
+            "current": 0.2023431500184151
+          },
+          {
+            "evaluation": 475,
+            "stage": "Refine",
+            "best": 0.20226245918312483,
+            "current": 0.20226245918312483
+          },
+          {
+            "evaluation": 478,
+            "stage": "Refine",
+            "best": 0.2022369269473285,
+            "current": 0.2022369269473285
+          },
+          {
+            "evaluation": 480,
+            "stage": "Refine",
+            "best": 0.2022369269473285,
+            "current": 0.2022369269473285
+          },
+          {
+            "evaluation": 483,
+            "stage": "Refine",
+            "best": 0.2021272058349926,
+            "current": 0.2021272058349926
+          },
+          {
+            "evaluation": 486,
+            "stage": "Refine",
+            "best": 0.20211945395405873,
+            "current": 0.20211945395405873
+          },
+          {
+            "evaluation": 488,
+            "stage": "Refine",
+            "best": 0.20211945395405873,
+            "current": 0.20260016706171127
+          },
+          {
+            "evaluation": 496,
+            "stage": "Refine",
+            "best": 0.20211945395405873,
+            "current": 0.20211945395405873
+          },
+          {
+            "evaluation": 500,
+            "stage": "Refine",
+            "best": 0.201840340555121,
+            "current": 0.201840340555121
+          },
+          {
+            "evaluation": 504,
+            "stage": "Refine",
+            "best": 0.20110821311979235,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 512,
+            "stage": "Refine",
+            "best": 0.20110821311979235,
+            "current": 0.20110821311979235
+          }
+        ],
+        "evaluations": 512,
+        "renders": 433,
+        "generations": 19,
+        "elapsed_seconds": 11.7404355,
+        "refined": false,
+        "performance": {
+          "backend": "CPU · rustfft",
+          "adapter": null,
+          "cpu_fft_ms": 0.0,
+          "gpu_fft_ms": null,
+          "gpu_dispatches": 0,
+          "render_seconds": 9.455069899999993,
+          "resample_seconds": 1.8445025999999989,
+          "features_seconds": 0.3817927,
+          "cache_hits": 79,
+          "cache_entries": 433,
+          "note": ""
+        }
+      },
+      {
+        "status": "Completed",
+        "config": {
+          "mode": "Advanced",
+          "seed": 2612,
+          "evaluations": 1024,
+          "population": 16,
+          "candidates": 6,
+          "differential_weight": 0.7,
+          "crossover": 0.8,
+          "max_seconds": 8.0,
+          "fit_special_frequencies": false,
+          "weights": {
+            "log_spectral": 1.0,
+            "convergence": 1.0,
+            "envelope": 1.5,
+            "harmonic": 0.25,
+            "transient": 0.35,
+            "modulation": 0.25,
+            "tail": 0.5
+          },
+          "match_level": true,
+          "compute": "Cpu"
+        },
+        "locks": [],
+        "initial": {
+          "operators": [
+            {
+              "dt": 0,
+              "mul": 9,
+              "tl": 126,
+              "rs": 1,
+              "ar": 31,
+              "d1r": 13,
+              "d2r": 2,
+              "sl": 0,
+              "rr": 12,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 4,
+              "mul": 3,
+              "tl": 69,
+              "rs": 2,
+              "ar": 29,
+              "d1r": 12,
+              "d2r": 2,
+              "sl": 0,
+              "rr": 5,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 23,
+              "rs": 0,
+              "ar": 30,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 2,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 4,
+              "mul": 1,
+              "tl": 35,
+              "rs": 1,
+              "ar": 30,
+              "d1r": 0,
+              "d2r": 1,
+              "sl": 1,
+              "rr": 7,
+              "am": false,
+              "ssg": 0
+            }
+          ],
+          "channel": {
+            "algorithm": 0,
+            "feedback": 2,
+            "ams": 0,
+            "fms": 0,
+            "left": true,
+            "right": true
+          },
+          "global": {
+            "lfo_enabled": false,
+            "lfo_rate": 0
+          },
+          "channel3_special": null,
+          "audition": {
+            "velocity_tl_depth": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "context": {
+          "loss_version": 2,
+          "fingerprint": "027f44604f84d795",
+          "sample_rate": 24000,
+          "frames": 5720,
+          "reference_onset_seconds": 0.0,
+          "reference_start_seconds": 0.0,
+          "reference_end_seconds": 0.2383219954648526,
+          "reference_gain": 1.0,
+          "pitch_hz": 65.58313490814433,
+          "audition": {
+            "note": 36,
+            "tuning_cents": 4.671895583182833,
+            "velocity": 127,
+            "key_on_seconds": 0.2,
+            "total_seconds": 0.2383219954648526,
+            "channel": 1,
+            "profile": "YM2612_DISCRETE",
+            "clock": "Ntsc"
+          }
+        },
+        "initial_loss": {
+          "recording_gain": 71.33313056451513,
+          "total": 0.20110821311979235,
+          "log_spectral": 0.2719735090532901,
+          "convergence": 0.46055062253012014,
+          "envelope": 0.06159537515923176,
+          "harmonic": 0.3252626346912705,
+          "transient": 0.01993750518702111,
+          "modulation": 0.14015558491737762,
+          "tail": 0.05424991518223118
+        },
+        "candidates": [
+          {
+            "evaluation": 928,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          },
+          {
+            "evaluation": 929,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 5,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          },
+          {
+            "evaluation": 930,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 21,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          },
+          {
+            "evaluation": 940,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 5,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          },
+          {
+            "evaluation": 941,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 0,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          },
+          {
+            "evaluation": 945,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 10,
+                  "tl": 127,
+                  "rs": 2,
+                  "ar": 26,
+                  "d1r": 14,
+                  "d2r": 12,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 31,
+                  "d1r": 13,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 29,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 6,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.138689040728208,
+              "total": 0.15102061322720162,
+              "log_spectral": 0.08479319066074616,
+              "convergence": 0.43427395762563564,
+              "envelope": 0.06575727947439852,
+              "harmonic": 0.23105463231961942,
+              "transient": 0.021246205878883147,
+              "modulation": 0.08282324231203675,
+              "tail": 0.05768253187685067
+            }
+          }
+        ],
+        "history": [
+          {
+            "evaluation": 1,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 8,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.26044704405793967
+          },
+          {
+            "evaluation": 16,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.2982592563241914
+          },
+          {
+            "evaluation": 24,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.23979959263153433
+          },
+          {
+            "evaluation": 32,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.26787121822572196
+          },
+          {
+            "evaluation": 40,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.24111252425113763
+          },
+          {
+            "evaluation": 48,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.29189261313311005
+          },
+          {
+            "evaluation": 56,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.3218637157596112
+          },
+          {
+            "evaluation": 64,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.3138437226364696
+          },
+          {
+            "evaluation": 72,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.40685674943775585
+          },
+          {
+            "evaluation": 80,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.2732921356304996
+          },
+          {
+            "evaluation": 88,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.20493345078086728
+          },
+          {
+            "evaluation": 96,
+            "stage": "Coarse",
+            "best": 0.20110821311979235,
+            "current": 0.23325789182534215
+          },
+          {
+            "evaluation": 100,
+            "stage": "Coarse",
+            "best": 0.1792917614954959,
+            "current": 0.1792917614954959
+          },
+          {
+            "evaluation": 104,
+            "stage": "Coarse",
+            "best": 0.1792917614954959,
+            "current": 0.2798695623503719
+          },
+          {
+            "evaluation": 112,
+            "stage": "Coarse",
+            "best": 0.1792917614954959,
+            "current": 0.22279197350173424
+          },
+          {
+            "evaluation": 120,
+            "stage": "Coarse",
+            "best": 0.1792917614954959,
+            "current": 0.2892277791172887
+          },
+          {
+            "evaluation": 126,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.16788266956345713
+          },
+          {
+            "evaluation": 128,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.3005389733644792
+          },
+          {
+            "evaluation": 136,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.17705585424856507
+          },
+          {
+            "evaluation": 144,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.3020157926054983
+          },
+          {
+            "evaluation": 152,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.2087614825169873
+          },
+          {
+            "evaluation": 160,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.34461781855763557
+          },
+          {
+            "evaluation": 168,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.26835125763244794
+          },
+          {
+            "evaluation": 176,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.18421768851309167
+          },
+          {
+            "evaluation": 184,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.21768520197606714
+          },
+          {
+            "evaluation": 192,
+            "stage": "Coarse",
+            "best": 0.16788266956345713,
+            "current": 0.18034044133928476
+          },
+          {
+            "evaluation": 194,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.16439496959243624
+          },
+          {
+            "evaluation": 200,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.18429190080558233
+          },
+          {
+            "evaluation": 208,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.19398500554755368
+          },
+          {
+            "evaluation": 216,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.18228451339845225
+          },
+          {
+            "evaluation": 224,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.20167463713862593
+          },
+          {
+            "evaluation": 232,
+            "stage": "Coarse",
+            "best": 0.16439496959243624,
+            "current": 0.17836616028963684
+          },
+          {
+            "evaluation": 237,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.15702320197370345
+          },
+          {
+            "evaluation": 240,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.25884434330062545
+          },
+          {
+            "evaluation": 248,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.18037168749808796
+          },
+          {
+            "evaluation": 256,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.20897047337164262
+          },
+          {
+            "evaluation": 264,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.17361468227811735
+          },
+          {
+            "evaluation": 272,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.19448504343049378
+          },
+          {
+            "evaluation": 280,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.17462431780939341
+          },
+          {
+            "evaluation": 288,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.17457460119672152
+          },
+          {
+            "evaluation": 296,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.17831975306290862
+          },
+          {
+            "evaluation": 304,
+            "stage": "Coarse",
+            "best": 0.15702320197370345,
+            "current": 0.2541629103978234
+          },
+          {
+            "evaluation": 308,
+            "stage": "Envelopes",
+            "best": 0.15702320197370345,
+            "current": 0.15702320197370345
+          },
+          {
+            "evaluation": 312,
+            "stage": "Envelopes",
+            "best": 0.15702320197370345,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 320,
+            "stage": "Envelopes",
+            "best": 0.15702320197370345,
+            "current": 0.21915514419756713
+          },
+          {
+            "evaluation": 328,
+            "stage": "Envelopes",
+            "best": 0.15702320197370345,
+            "current": 0.2059182501651025
+          },
+          {
+            "evaluation": 336,
+            "stage": "Envelopes",
+            "best": 0.15702320197370345,
+            "current": 0.18074486467530224
+          },
+          {
+            "evaluation": 340,
+            "stage": "Envelopes",
+            "best": 0.15653933400879458,
+            "current": 0.15653933400879458
+          },
+          {
+            "evaluation": 344,
+            "stage": "Envelopes",
+            "best": 0.15653933400879458,
+            "current": 0.21383602858356338
+          },
+          {
+            "evaluation": 352,
+            "stage": "Envelopes",
+            "best": 0.15653933400879458,
+            "current": 0.18107737573131413
+          },
+          {
+            "evaluation": 356,
+            "stage": "Envelopes",
+            "best": 0.1564882857690537,
+            "current": 0.1564882857690537
+          },
+          {
+            "evaluation": 360,
+            "stage": "Envelopes",
+            "best": 0.1564882857690537,
+            "current": 0.2069207715142615
+          },
+          {
+            "evaluation": 368,
+            "stage": "Envelopes",
+            "best": 0.1564882857690537,
+            "current": 0.19317963610218236
+          },
+          {
+            "evaluation": 376,
+            "stage": "Envelopes",
+            "best": 0.1564882857690537,
+            "current": 0.20142686697623802
+          },
+          {
+            "evaluation": 384,
+            "stage": "Envelopes",
+            "best": 0.1564882857690537,
+            "current": 0.21920209051300502
+          },
+          {
+            "evaluation": 388,
+            "stage": "Envelopes",
+            "best": 0.15556598138205352,
+            "current": 0.15556598138205352
+          },
+          {
+            "evaluation": 392,
+            "stage": "Envelopes",
+            "best": 0.15556598138205352,
+            "current": 0.20604985738900822
+          },
+          {
+            "evaluation": 400,
+            "stage": "Envelopes",
+            "best": 0.15556598138205352,
+            "current": 0.1810979101049251
+          },
+          {
+            "evaluation": 408,
+            "stage": "Envelopes",
+            "best": 0.15556598138205352,
+            "current": 0.20330026826843897
+          },
+          {
+            "evaluation": 416,
+            "stage": "Envelopes",
+            "best": 0.15556598138205352,
+            "current": 0.18185935682152884
+          },
+          {
+            "evaluation": 420,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.15337758132615653
+          },
+          {
+            "evaluation": 424,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.21388690330441257
+          },
+          {
+            "evaluation": 432,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.1839567078226634
+          },
+          {
+            "evaluation": 440,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.2089539609224893
+          },
+          {
+            "evaluation": 448,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.18459869124154793
+          },
+          {
+            "evaluation": 456,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20889768134702932
+          },
+          {
+            "evaluation": 464,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.16553358646134136
+          },
+          {
+            "evaluation": 472,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20135540380292113
+          },
+          {
+            "evaluation": 480,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.17672401806623103
+          },
+          {
+            "evaluation": 488,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20110586183288293
+          },
+          {
+            "evaluation": 496,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.1629708459081005
+          },
+          {
+            "evaluation": 504,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20145573496523494
+          },
+          {
+            "evaluation": 512,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.16346587112281943
+          },
+          {
+            "evaluation": 520,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20684320829768604
+          },
+          {
+            "evaluation": 528,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.18505369871545693
+          },
+          {
+            "evaluation": 536,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.21492835725833886
+          },
+          {
+            "evaluation": 544,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.17912389679437993
+          },
+          {
+            "evaluation": 552,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20987697303016653
+          },
+          {
+            "evaluation": 560,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.16555094889929098
+          },
+          {
+            "evaluation": 568,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.21503415575763815
+          },
+          {
+            "evaluation": 576,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.1735693385117089
+          },
+          {
+            "evaluation": 584,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.20122025136459437
+          },
+          {
+            "evaluation": 592,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.16532046802785966
+          },
+          {
+            "evaluation": 600,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.2012049101934607
+          },
+          {
+            "evaluation": 608,
+            "stage": "Envelopes",
+            "best": 0.15337758132615653,
+            "current": 0.16416117010488174
+          },
+          {
+            "evaluation": 615,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.15337758132615653
+          },
+          {
+            "evaluation": 616,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 624,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20792356366042977
+          },
+          {
+            "evaluation": 632,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.2012660228633321
+          },
+          {
+            "evaluation": 640,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20684400160915453
+          },
+          {
+            "evaluation": 648,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 656,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.1539387101661614
+          },
+          {
+            "evaluation": 664,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 672,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20684400160915453
+          },
+          {
+            "evaluation": 680,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.23911999462981504
+          },
+          {
+            "evaluation": 688,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.1539387101661614
+          },
+          {
+            "evaluation": 696,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 704,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.1539387101661614
+          },
+          {
+            "evaluation": 712,
+            "stage": "Modulation",
+            "best": 0.15337758132615653,
+            "current": 0.20110821311979235
+          },
+          {
+            "evaluation": 717,
+            "stage": "Refine",
+            "best": 0.15337758132615653,
+            "current": 0.15337758132615653
+          },
+          {
+            "evaluation": 720,
+            "stage": "Refine",
+            "best": 0.15337758132615653,
+            "current": 0.15337758132615653
+          },
+          {
+            "evaluation": 728,
+            "stage": "Refine",
+            "best": 0.15337758132615653,
+            "current": 0.1534167998316484
+          },
+          {
+            "evaluation": 734,
+            "stage": "Refine",
+            "best": 0.1531125787500596,
+            "current": 0.1531125787500596
+          },
+          {
+            "evaluation": 735,
+            "stage": "Refine",
+            "best": 0.1530172602421237,
+            "current": 0.1530172602421237
+          },
+          {
+            "evaluation": 736,
+            "stage": "Refine",
+            "best": 0.1530172602421237,
+            "current": 0.1531125787500596
+          },
+          {
+            "evaluation": 740,
+            "stage": "Refine",
+            "best": 0.15276835814967266,
+            "current": 0.15276835814967266
+          },
+          {
+            "evaluation": 742,
+            "stage": "Refine",
+            "best": 0.15265814589527585,
+            "current": 0.15265814589527585
+          },
+          {
+            "evaluation": 744,
+            "stage": "Refine",
+            "best": 0.15265814589527585,
+            "current": 0.1527785313559047
+          },
+          {
+            "evaluation": 746,
+            "stage": "Refine",
+            "best": 0.151753572744628,
+            "current": 0.151753572744628
+          },
+          {
+            "evaluation": 747,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.15148671240854875
+          },
+          {
+            "evaluation": 752,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.15148671240854875
+          },
+          {
+            "evaluation": 760,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.30876079181356675
+          },
+          {
+            "evaluation": 768,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.15148671240854875
+          },
+          {
+            "evaluation": 776,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.15148671240854875
+          },
+          {
+            "evaluation": 784,
+            "stage": "Refine",
+            "best": 0.15148671240854875,
+            "current": 0.15148671240854875
+          },
+          {
+            "evaluation": 789,
+            "stage": "Refine",
+            "best": 0.15134455759964413,
+            "current": 0.15134455759964413
+          },
+          {
+            "evaluation": 792,
+            "stage": "Refine",
+            "best": 0.15134455759964413,
+            "current": 0.15168922283649944
+          },
+          {
+            "evaluation": 800,
+            "stage": "Refine",
+            "best": 0.15134455759964413,
+            "current": 0.15134455759964413
+          },
+          {
+            "evaluation": 802,
+            "stage": "Refine",
+            "best": 0.15133756563951112,
+            "current": 0.15133756563951112
+          },
+          {
+            "evaluation": 808,
+            "stage": "Refine",
+            "best": 0.15133756563951112,
+            "current": 0.15151070681401937
+          },
+          {
+            "evaluation": 816,
+            "stage": "Refine",
+            "best": 0.15133756563951112,
+            "current": 0.21669506568314395
+          },
+          {
+            "evaluation": 824,
+            "stage": "Refine",
+            "best": 0.15133756563951112,
+            "current": 0.15133756563951112
+          },
+          {
+            "evaluation": 827,
+            "stage": "Refine",
+            "best": 0.1513334658330966,
+            "current": 0.1513334658330966
+          },
+          {
+            "evaluation": 832,
+            "stage": "Refine",
+            "best": 0.1513334658330966,
+            "current": 0.15558964059012764
+          },
+          {
+            "evaluation": 840,
+            "stage": "Refine",
+            "best": 0.1513334658330966,
+            "current": 0.1513334658330966
+          },
+          {
+            "evaluation": 841,
+            "stage": "Refine",
+            "best": 0.15117324974814228,
+            "current": 0.15117324974814228
+          },
+          {
+            "evaluation": 844,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15105166499607267
+          },
+          {
+            "evaluation": 848,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15157372956219264
+          },
+          {
+            "evaluation": 856,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.1608230930781542
+          },
+          {
+            "evaluation": 864,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.21728749120935953
+          },
+          {
+            "evaluation": 872,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15105166499607267
+          },
+          {
+            "evaluation": 880,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15105166499607267
+          },
+          {
+            "evaluation": 888,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15165515570701107
+          },
+          {
+            "evaluation": 896,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.1538318405011736
+          },
+          {
+            "evaluation": 904,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15105166499607267
+          },
+          {
+            "evaluation": 912,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15298590834115272
+          },
+          {
+            "evaluation": 920,
+            "stage": "Refine",
+            "best": 0.15105166499607267,
+            "current": 0.15105166499607267
+          },
+          {
+            "evaluation": 928,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 936,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15109562152095807
+          },
+          {
+            "evaluation": 944,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.1512535341205942
+          },
+          {
+            "evaluation": 952,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 960,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.3414146571741128
+          },
+          {
+            "evaluation": 968,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 976,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 984,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 992,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15159412613446124
+          },
+          {
+            "evaluation": 1000,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          },
+          {
+            "evaluation": 1008,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15110130394543045
+          },
+          {
+            "evaluation": 1016,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.215902138426366
+          },
+          {
+            "evaluation": 1024,
+            "stage": "Refine",
+            "best": 0.15102061322720162,
+            "current": 0.15102061322720162
+          }
+        ],
+        "evaluations": 1024,
+        "renders": 903,
+        "generations": 46,
+        "elapsed_seconds": 24.2552149,
+        "refined": true,
+        "performance": {
+          "backend": "CPU · rustfft",
+          "adapter": null,
+          "cpu_fft_ms": 0.0,
+          "gpu_fft_ms": null,
+          "gpu_dispatches": 0,
+          "render_seconds": 19.679340600000003,
+          "resample_seconds": 3.7145182999999964,
+          "features_seconds": 0.7785664000000005,
+          "cache_hits": 121,
+          "cache_entries": 903,
+          "note": ""
+        }
+      },
+      {
+        "status": "Completed",
+        "config": {
+          "mode": "Advanced",
+          "seed": 2612,
+          "evaluations": 1024,
+          "population": 16,
+          "candidates": 6,
+          "differential_weight": 0.7,
+          "crossover": 0.8,
+          "max_seconds": 8.0,
+          "fit_special_frequencies": false,
+          "weights": {
+            "log_spectral": 1.0,
+            "convergence": 1.0,
+            "envelope": 1.5,
+            "harmonic": 0.25,
+            "transient": 0.35,
+            "modulation": 0.25,
+            "tail": 0.5
+          },
+          "match_level": true,
+          "compute": "Cpu"
+        },
+        "locks": [],
+        "initial": {
+          "operators": [
+            {
+              "dt": 0,
+              "mul": 10,
+              "tl": 127,
+              "rs": 2,
+              "ar": 26,
+              "d1r": 14,
+              "d2r": 12,
+              "sl": 0,
+              "rr": 12,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 4,
+              "mul": 1,
+              "tl": 48,
+              "rs": 2,
+              "ar": 31,
+              "d1r": 13,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 8,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 24,
+              "rs": 1,
+              "ar": 29,
+              "d1r": 0,
+              "d2r": 2,
+              "sl": 1,
+              "rr": 2,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 6,
+              "mul": 1,
+              "tl": 0,
+              "rs": 0,
+              "ar": 30,
+              "d1r": 2,
+              "d2r": 5,
+              "sl": 0,
+              "rr": 7,
+              "am": false,
+              "ssg": 0
+            }
+          ],
+          "channel": {
+            "algorithm": 0,
+            "feedback": 1,
+            "ams": 0,
+            "fms": 0,
+            "left": true,
+            "right": true
+          },
+          "global": {
+            "lfo_enabled": false,
+            "lfo_rate": 0
+          },
+          "channel3_special": null,
+          "audition": {
+            "velocity_tl_depth": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "context": {
+          "loss_version": 3,
+          "fingerprint": "99168e8e11b75711",
+          "sample_rate": 24000,
+          "frames": 5720,
+          "reference_onset_seconds": 0.0,
+          "reference_start_seconds": 0.0,
+          "reference_end_seconds": 0.2383219954648526,
+          "reference_gain": 1.0,
+          "pitch_hz": 65.4940556664563,
+          "audition": {
+            "note": 36,
+            "tuning_cents": 2.3188234835918315,
+            "velocity": 127,
+            "key_on_seconds": 0.2,
+            "total_seconds": 0.2383219954648526,
+            "channel": 1,
+            "profile": "YM2612_DISCRETE",
+            "clock": "Ntsc"
+          }
+        },
+        "initial_loss": {
+          "recording_gain": 5.139400551555619,
+          "total": 0.14990366457154264,
+          "log_spectral": 0.08393690927891319,
+          "convergence": 0.43173396922370405,
+          "envelope": 0.06437798708935118,
+          "harmonic": 0.23413257458342562,
+          "transient": 0.021026509064060728,
+          "modulation": 0.08087961450081743,
+          "tail": 0.05736517718371156
+        },
+        "candidates": [
+          {
+            "evaluation": 836,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 10,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 2,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 1,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          },
+          {
+            "evaluation": 839,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 10,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 1,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 1,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          },
+          {
+            "evaluation": 840,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 10,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 3,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 1,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          },
+          {
+            "evaluation": 845,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 10,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 2,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          },
+          {
+            "evaluation": 846,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 10,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 2,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 2,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          },
+          {
+            "evaluation": 851,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 1,
+                  "mul": 9,
+                  "tl": 117,
+                  "rs": 2,
+                  "ar": 24,
+                  "d1r": 13,
+                  "d2r": 11,
+                  "sl": 0,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 4,
+                  "mul": 1,
+                  "tl": 48,
+                  "rs": 2,
+                  "ar": 28,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 8,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 24,
+                  "rs": 1,
+                  "ar": 30,
+                  "d1r": 0,
+                  "d2r": 2,
+                  "sl": 2,
+                  "rr": 3,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 5,
+                  "mul": 1,
+                  "tl": 0,
+                  "rs": 0,
+                  "ar": 30,
+                  "d1r": 1,
+                  "d2r": 5,
+                  "sl": 0,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 0,
+                "feedback": 1,
+                "ams": 0,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 0
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.136541779970491,
+              "total": 0.14972725318618196,
+              "log_spectral": 0.08247174492088082,
+              "convergence": 0.43102740445370297,
+              "envelope": 0.0645441725714194,
+              "harmonic": 0.23470018870559084,
+              "transient": 0.02105079423723514,
+              "modulation": 0.08170689620198027,
+              "tail": 0.05878444102268895
+            }
+          }
+        ],
+        "history": [
+          {
+            "evaluation": 1,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 8,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2314581948346003
+          },
+          {
+            "evaluation": 16,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2772120165880283
+          },
+          {
+            "evaluation": 24,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.1644009704979604
+          },
+          {
+            "evaluation": 32,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2465514022728049
+          },
+          {
+            "evaluation": 40,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2967762428911174
+          },
+          {
+            "evaluation": 48,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.23380822319884056
+          },
+          {
+            "evaluation": 56,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.30090077345600785
+          },
+          {
+            "evaluation": 64,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.3139129807958355
+          },
+          {
+            "evaluation": 72,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2598730696360864
+          },
+          {
+            "evaluation": 80,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.2312100123613704
+          },
+          {
+            "evaluation": 88,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 96,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.28426629666939024
+          },
+          {
+            "evaluation": 104,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.24938340732835904
+          },
+          {
+            "evaluation": 112,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.1687265057380096
+          },
+          {
+            "evaluation": 120,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.15051729481951018
+          },
+          {
+            "evaluation": 128,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.23301979852481036
+          },
+          {
+            "evaluation": 136,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.17229850789490603
+          },
+          {
+            "evaluation": 144,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.16715818916734837
+          },
+          {
+            "evaluation": 152,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.18438112280478128
+          },
+          {
+            "evaluation": 160,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.17229850789490603
+          },
+          {
+            "evaluation": 168,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.18263524924767666
+          },
+          {
+            "evaluation": 176,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.154003081375049
+          },
+          {
+            "evaluation": 184,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.154003081375049
+          },
+          {
+            "evaluation": 192,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 200,
+            "stage": "Coarse",
+            "best": 0.14990366457154264,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 203,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 208,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 216,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.1500068500460638
+          },
+          {
+            "evaluation": 224,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 232,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 240,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 248,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 256,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 264,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.23235108925211562
+          },
+          {
+            "evaluation": 272,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 280,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 288,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 296,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.17718032340891965
+          },
+          {
+            "evaluation": 304,
+            "stage": "Coarse",
+            "best": 0.14975072403491654,
+            "current": 0.1500068500460638
+          },
+          {
+            "evaluation": 308,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 312,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 320,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15565098684297102
+          },
+          {
+            "evaluation": 328,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.17462652934177098
+          },
+          {
+            "evaluation": 336,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15840739450903962
+          },
+          {
+            "evaluation": 344,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.1677156729751418
+          },
+          {
+            "evaluation": 352,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.1961567245681708
+          },
+          {
+            "evaluation": 360,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15747567154222844
+          },
+          {
+            "evaluation": 368,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.1663292067441056
+          },
+          {
+            "evaluation": 376,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.1544670113086355
+          },
+          {
+            "evaluation": 384,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.16326874441582778
+          },
+          {
+            "evaluation": 392,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.1624328558840562
+          },
+          {
+            "evaluation": 400,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15030299065979122
+          },
+          {
+            "evaluation": 408,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15071489313773134
+          },
+          {
+            "evaluation": 416,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15000959225262706
+          },
+          {
+            "evaluation": 424,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15016298286102003
+          },
+          {
+            "evaluation": 432,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14991552026010477
+          },
+          {
+            "evaluation": 440,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 448,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14991552026010477
+          },
+          {
+            "evaluation": 456,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15017700280606835
+          },
+          {
+            "evaluation": 464,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975673238679155
+          },
+          {
+            "evaluation": 472,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 480,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 488,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15053895738885067
+          },
+          {
+            "evaluation": 496,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 504,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 512,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 520,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 528,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 536,
+            "stage": "Envelopes",
+            "best": 0.14975072403491654,
+            "current": 0.15060193513135295
+          },
+          {
+            "evaluation": 544,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14975067834152228
+          },
+          {
+            "evaluation": 552,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 560,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 568,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 576,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.15061602412195596
+          },
+          {
+            "evaluation": 584,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 592,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 600,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 608,
+            "stage": "Envelopes",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 615,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14975067834152228
+          },
+          {
+            "evaluation": 616,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 624,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.21339731465031028
+          },
+          {
+            "evaluation": 632,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.15166582793693342
+          },
+          {
+            "evaluation": 640,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.21256185766356891
+          },
+          {
+            "evaluation": 648,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 656,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 664,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 672,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.21256185766356891
+          },
+          {
+            "evaluation": 680,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.2167494960663288
+          },
+          {
+            "evaluation": 688,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 696,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 704,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14975072403491654
+          },
+          {
+            "evaluation": 712,
+            "stage": "Modulation",
+            "best": 0.14975067834152228,
+            "current": 0.14990366457154264
+          },
+          {
+            "evaluation": 717,
+            "stage": "Refine",
+            "best": 0.14975067834152228,
+            "current": 0.14975067834152228
+          },
+          {
+            "evaluation": 720,
+            "stage": "Refine",
+            "best": 0.14975067834152228,
+            "current": 0.14975067834152228
+          },
+          {
+            "evaluation": 727,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 728,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14975067834152228
+          },
+          {
+            "evaluation": 736,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14980395463717525
+          },
+          {
+            "evaluation": 744,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.1499720419841575
+          },
+          {
+            "evaluation": 752,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 760,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.30848418047132836
+          },
+          {
+            "evaluation": 768,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 776,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 784,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 792,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.15030299065979122
+          },
+          {
+            "evaluation": 800,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 808,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14991507372597426
+          },
+          {
+            "evaluation": 816,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.21650687765929413
+          },
+          {
+            "evaluation": 824,
+            "stage": "Refine",
+            "best": 0.14974833322211853,
+            "current": 0.14974833322211853
+          },
+          {
+            "evaluation": 827,
+            "stage": "Refine",
+            "best": 0.14974767700691788,
+            "current": 0.14974767700691788
+          },
+          {
+            "evaluation": 832,
+            "stage": "Refine",
+            "best": 0.14974767700691788,
+            "current": 0.1527824234525291
+          },
+          {
+            "evaluation": 836,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 840,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 848,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.15098175932687438
+          },
+          {
+            "evaluation": 856,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.16024000982074812
+          },
+          {
+            "evaluation": 864,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.22084557826530207
+          },
+          {
+            "evaluation": 872,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 880,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 888,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.1503215549384457
+          },
+          {
+            "evaluation": 896,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.15234384255466715
+          },
+          {
+            "evaluation": 904,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 912,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.15208782813721394
+          },
+          {
+            "evaluation": 920,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 928,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14975655022765047
+          },
+          {
+            "evaluation": 936,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.1498027669564745
+          },
+          {
+            "evaluation": 944,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.1499162672549802
+          },
+          {
+            "evaluation": 952,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 960,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.3408452661311461
+          },
+          {
+            "evaluation": 968,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 976,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 984,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 992,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.1503082537211329
+          },
+          {
+            "evaluation": 1000,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          },
+          {
+            "evaluation": 1008,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.1500927030970614
+          },
+          {
+            "evaluation": 1016,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.21675911472545648
+          },
+          {
+            "evaluation": 1024,
+            "stage": "Refine",
+            "best": 0.14972725318618196,
+            "current": 0.14972725318618196
+          }
+        ],
+        "evaluations": 1024,
+        "renders": 869,
+        "generations": 46,
+        "elapsed_seconds": 22.8796679,
+        "refined": true,
+        "performance": {
+          "backend": "CPU · rustfft",
+          "adapter": null,
+          "cpu_fft_ms": 0.0,
+          "gpu_fft_ms": null,
+          "gpu_dispatches": 0,
+          "render_seconds": 18.55372019999999,
+          "resample_seconds": 3.4639488000000003,
+          "features_seconds": 0.7610950000000009,
+          "cache_hits": 155,
+          "cache_entries": 869,
+          "note": ""
+        }
+      }
+    ]
+  }
+}

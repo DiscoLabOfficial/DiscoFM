@@ -1,0 +1,43 @@
+name: Feature request
+description: Suggest a capability or an improvement to a DiscoFM workflow.
+title: "[Feature]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case or current limitation
+      description: Explain the task you want to accomplish and where the current workflow falls short.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed behavior
+      description: Describe how the feature should work and what result it should produce.
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Related area
+      multiple: true
+      options:
+        - Editor and patch library
+        - Audio playback or MIDI
+        - Reference import and analysis
+        - Automatic fitting
+        - Session or instrument import/export
+        - Command-line tools
+        - Build or installation
+        - Other or unsure
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives or workarounds
+      description: Describe existing options you have tried and why they do not meet the use case.
+  - type: textarea
+    id: context
+    attributes:
+      label: Examples and compatibility considerations
+      description: Add mockups, related issues or format references. Mention any expected effects on existing sessions, CLI commands or instrument formats.

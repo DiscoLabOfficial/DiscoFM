@@ -1,0 +1,21 @@
+[package]
+name = "discofm-ui"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+discofm-soundfont.workspace = true
+discofm-chip.workspace = true
+discofm-engine.workspace = true
+discofm-audio.workspace = true
+discofm-formats.workspace = true
+discofm-analysis.workspace = true
+discofm-fit.workspace = true
+discofm-log.workspace = true
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "glow", "x11", "wayland"] }
+rfd = "0.17.2"
+image = { version = "0.25.10", default-features = false, features = ["png"] }
+serde_json.workspace = true
+arboard = { version = "3.6", default-features = false }
+midir = "0.11"

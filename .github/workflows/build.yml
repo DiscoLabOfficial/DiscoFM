@@ -1,0 +1,177 @@
+name: Rust builds
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: rust-builds-${{ github.ref }}
+  cancel-in-progress: true
+
+env:
+  CARGO_TERM_COLOR: always
+  CARGO_INCREMENTAL: "0"
+  RUSTFLAGS: "-D warnings"
+  RUSTDOCFLAGS: "-D warnings"
+
+jobs:
+  source:
+    name: Corresponding source
+    runs-on: ubuntu-24.04
+    timeout-minutes: 20
+    outputs:
+      artifact-url: ${{ steps.upload.outputs.artifact-url }}
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: dtolnay/rust-toolchain@nightly
+      - name: Package application and dependency sources
+        shell: bash
+        run: |
+          mkdir -p distribution/source/.cargo
+          git archive HEAD | tar -x -C distribution/source
+          cd distribution/source
+          cargo +nightly vendor --locked --versioned-dirs vendor > .cargo/config.toml
+          cargo +nightly metadata --offline --locked --format-version 1 > /dev/null
+          tar -czf "../DiscoFM-${GITHUB_SHA}-source.tar.gz" .
+      - name: Upload corresponding source
+        id: upload
+        uses: actions/upload-artifact@v7
+        with:
+          name: DiscoFM-source
+          path: distribution/DiscoFM-*-source.tar.gz
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0
+
+  build:
+    name: ${{ matrix.name }} / nightly
+    needs: source
+    runs-on: ${{ matrix.runner }}
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - name: Windows x86_64
+            runner: windows-2025
+            target: x86_64-pc-windows-msvc
+            suffix: .exe
+          - name: Windows ARM64
+            runner: windows-11-arm
+            target: aarch64-pc-windows-msvc
+            suffix: .exe
+          - name: Linux x86_64
+            runner: ubuntu-24.04
+            target: x86_64-unknown-linux-gnu
+            suffix: ""
+          - name: Linux ARM64
+            runner: ubuntu-24.04-arm
+            target: aarch64-unknown-linux-gnu
+            suffix: ""
+          - name: macOS Intel
+            runner: macos-15-intel
+            target: x86_64-apple-darwin
+            suffix: ""
+          - name: macOS Apple Silicon
+            runner: macos-15
+            target: aarch64-apple-darwin
+            suffix: ""
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Install Linux build dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install --no-install-recommends -y \
+            build-essential pkg-config libasound2-dev libudev-dev \
+            libxkbcommon-dev libwayland-dev libx11-dev libxi-dev \
+            libxcursor-dev libxrandr-dev libgl1-mesa-dev libegl1-mesa-dev \
+            libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev \
+            libssl-dev libdbus-1-dev
+      - uses: dtolnay/rust-toolchain@nightly
+        with:
+          targets: ${{ matrix.target }}
+      - name: Build release binaries
+        run: cargo +nightly build --locked --release --workspace --bins --target ${{ matrix.target }}
+      - name: Compile tests
+        run: cargo +nightly test --locked --workspace --no-run --target ${{ matrix.target }}
+      - name: Check CLI startup
+        shell: bash
+        env:
+          BUILD_TARGET: ${{ matrix.target }}
+          EXE_SUFFIX: ${{ matrix.suffix }}
+        run: '"target/${BUILD_TARGET}/release/discofm${EXE_SUFFIX}" --version'
+      - name: Package binaries and notices
+        shell: bash
+        env:
+          BUILD_TARGET: ${{ matrix.target }}
+          EXE_SUFFIX: ${{ matrix.suffix }}
+          SOURCE_URL: ${{ needs.source.outputs.artifact-url }}
+        run: |
+          package="distribution/DiscoFM-${BUILD_TARGET}"
+          mkdir -p "$package/licenses/native"
+          cp "target/${BUILD_TARGET}/release/discofm${EXE_SUFFIX}" "$package/"
+          cp "target/${BUILD_TARGET}/release/discofm-gui${EXE_SUFFIX}" "$package/"
+          cp LICENSE.txt THIRD_PARTY_NOTICES.md "$package/"
+          cp -R LICENSES "$package/licenses/"
+          cp crates/discofm-engine/vendor/nuked-opn2/LICENSE "$package/licenses/native/Nuked-OPN2.txt"
+          cp crates/discofm-engine/vendor/ymfm/LICENSE "$package/licenses/native/ymfm.txt"
+          cargo +nightly metadata --locked --format-version 1 --filter-platform "$BUILD_TARGET" > "$package/dependencies.json"
+          python - "$package" <<'PY'
+          import json
+          import pathlib
+          import shutil
+          import sys
+
+          package = pathlib.Path(sys.argv[1])
+          metadata = json.loads((package / "dependencies.json").read_text(encoding="utf-8"))
+          resolved = {node["id"] for node in metadata["resolve"]["nodes"]}
+          for dependency in metadata["packages"]:
+              if dependency["id"] not in resolved or dependency["source"] is None:
+                  continue
+              destination = package / "licenses" / "Rust" / f'{dependency["name"]}-{dependency["version"]}'
+              destination.mkdir(parents=True, exist_ok=True)
+              notice = "\n".join([
+                  f'{dependency["name"]} {dependency["version"]}',
+                  "Authors: " + ", ".join(dependency["authors"]),
+                  "License: " + (dependency["license"] or "See license files"),
+                  "Repository: " + (dependency["repository"] or ""),
+              ])
+              (destination / "PACKAGE.txt").write_text(notice + "\n", encoding="utf-8")
+              source = pathlib.Path(dependency["manifest_path"]).parent
+              for entry in source.iterdir():
+                  if entry.name.lower().startswith(("license", "licence", "copying", "copyright", "notice", "authors", "readme")):
+                      if entry.is_dir():
+                          shutil.copytree(entry, destination / entry.name, dirs_exist_ok=True)
+                      else:
+                          shutil.copy2(entry, destination / entry.name)
+              if dependency["license_file"]:
+                  entry = source / dependency["license_file"]
+                  shutil.copy2(entry, destination / entry.name)
+          PY
+          {
+            printf 'DiscoFM build for %s\nCommit: %s\n\n' "$BUILD_TARGET" "$GITHUB_SHA"
+            rustc +nightly --version --verbose
+            printf '\nCorresponding source (application, native cores, Cargo dependencies and licenses):\n%s\n' "$SOURCE_URL"
+            printf 'Source archive: DiscoFM-%s-source.tar.gz\n' "$GITHUB_SHA"
+            printf '\nExtract the source archive and run:\ncargo +nightly build --offline --locked --release --workspace --bins --target %s\n' "$BUILD_TARGET"
+            printf '\nA C/C++ compiler and the platform SDK/development libraries are required; see README.md.\n'
+            printf 'The vendor directory retains dependency sources and their license/copyright files.\n'
+          } > "$package/BUILD.txt"
+          tar -czf "distribution/DiscoFM-${BUILD_TARGET}.tar.gz" -C distribution "DiscoFM-${BUILD_TARGET}"
+      - name: Upload platform package
+        uses: actions/upload-artifact@v7
+        with:
+          name: DiscoFM-${{ matrix.target }}
+          path: distribution/DiscoFM-${{ matrix.target }}.tar.gz
+          if-no-files-found: error
+          retention-days: 90
+          compression-level: 0

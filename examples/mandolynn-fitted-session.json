@@ -1,0 +1,3950 @@
+{
+  "version": 1,
+  "instrument": {
+    "operators": [
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 41,
+        "rs": 0,
+        "ar": 23,
+        "d1r": 0,
+        "d2r": 1,
+        "sl": 11,
+        "rr": 6,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 3,
+        "mul": 1,
+        "tl": 44,
+        "rs": 0,
+        "ar": 11,
+        "d1r": 12,
+        "d2r": 0,
+        "sl": 0,
+        "rr": 14,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 3,
+        "rs": 0,
+        "ar": 20,
+        "d1r": 17,
+        "d2r": 11,
+        "sl": 3,
+        "rr": 11,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 2,
+        "tl": 2,
+        "rs": 1,
+        "ar": 20,
+        "d1r": 15,
+        "d2r": 1,
+        "sl": 10,
+        "rr": 7,
+        "am": false,
+        "ssg": 0
+      }
+    ],
+    "channel": {
+      "algorithm": 5,
+      "feedback": 7,
+      "ams": 1,
+      "fms": 0,
+      "left": true,
+      "right": true
+    },
+    "global": {
+      "lfo_enabled": false,
+      "lfo_rate": 2
+    },
+    "channel3_special": null,
+    "audition": {
+      "velocity_tl_depth": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audition": {
+    "note": 59,
+    "tuning_cents": 0.16321612746945235,
+    "velocity": 127,
+    "key_on_seconds": 0.9472335600907029,
+    "total_seconds": 0.9472335600907029,
+    "channel": 1,
+    "profile": "YM2612_DISCRETE",
+    "clock": "Ntsc"
+  },
+  "reference_path": "references/STR_MandoLynn_B2.wav",
+  "reference_analysis": {
+    "options": {
+      "channel": "Mix",
+      "remove_dc": true,
+      "normalize": true,
+      "trim_silence": true,
+      "fft_size": 8192,
+      "start_seconds": 0.0,
+      "end_seconds": null,
+      "pitch_override_hz": null
+    },
+    "note_on_seconds": 0.0,
+    "key_off_seconds": 0.9472335600907029
+  },
+  "fitting": {
+    "config": {
+      "mode": "Advanced",
+      "seed": 2612,
+      "evaluations": 1024,
+      "population": 16,
+      "candidates": 6,
+      "differential_weight": 0.7,
+      "crossover": 0.8,
+      "max_seconds": 8.0,
+      "fit_special_frequencies": false,
+      "weights": {
+        "log_spectral": 1.0,
+        "convergence": 1.0,
+        "envelope": 1.5,
+        "harmonic": 0.25,
+        "transient": 0.35,
+        "modulation": 0.25,
+        "tail": 0.5
+      },
+      "match_level": true,
+      "compute": "Auto"
+    },
+    "locks": [],
+    "runs": [
+      {
+        "status": "Completed",
+        "config": {
+          "mode": "Advanced",
+          "seed": 2612,
+          "evaluations": 2048,
+          "population": 16,
+          "candidates": 6,
+          "differential_weight": 0.7,
+          "crossover": 0.8,
+          "max_seconds": 8.0,
+          "fit_special_frequencies": false,
+          "weights": {
+            "log_spectral": 1.0,
+            "convergence": 1.0,
+            "envelope": 1.5,
+            "harmonic": 0.25,
+            "transient": 0.35,
+            "modulation": 0.25,
+            "tail": 0.5
+          },
+          "match_level": true,
+          "compute": "Auto"
+        },
+        "locks": [],
+        "initial": {
+          "operators": [
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 127,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 24,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 10,
+              "am": false,
+              "ssg": 0
+            }
+          ],
+          "channel": {
+            "algorithm": 7,
+            "feedback": 0,
+            "ams": 0,
+            "fms": 0,
+            "left": true,
+            "right": true
+          },
+          "global": {
+            "lfo_enabled": false,
+            "lfo_rate": 0
+          },
+          "channel3_special": null,
+          "audition": {
+            "velocity_tl_depth": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "context": {
+          "loss_version": 2,
+          "fingerprint": "a56174d3ba57fa33",
+          "sample_rate": 24000,
+          "frames": 22734,
+          "reference_onset_seconds": 0.0,
+          "reference_start_seconds": 0.0,
+          "reference_end_seconds": 0.9472335600907029,
+          "reference_gain": 1.1056349277496338,
+          "pitch_hz": 245.70775066710405,
+          "audition": {
+            "note": 59,
+            "tuning_cents": -8.67218791608639,
+            "velocity": 127,
+            "key_on_seconds": 0.9472335600907029,
+            "total_seconds": 0.9472335600907029,
+            "channel": 1,
+            "profile": "YM2612_DISCRETE",
+            "clock": "Ntsc"
+          }
+        },
+        "initial_loss": {
+          "recording_gain": 9.281547634351172,
+          "total": 0.6111984749345359,
+          "log_spectral": 0.09433004872305106,
+          "convergence": 1.1016197989513683,
+          "envelope": 0.6397476972459825,
+          "harmonic": 1.1770081181748318,
+          "transient": 0.07093067772364192,
+          "modulation": 0.11577915021412781,
+          "tail": 0.9214373111771835
+        },
+        "candidates": [
+          {
+            "evaluation": 2008,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          },
+          {
+            "evaluation": 2013,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 9
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          },
+          {
+            "evaluation": 2044,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 9,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          },
+          {
+            "evaluation": 2045,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 11,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          },
+          {
+            "evaluation": 2046,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 10,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          },
+          {
+            "evaluation": 2047,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 31,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 12,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 45,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 26,
+                  "d1r": 16,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 0,
+                  "rs": 1,
+                  "ar": 25,
+                  "d1r": 15,
+                  "d2r": 3,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.156146020905637,
+              "total": 0.16113774699397285,
+              "log_spectral": 0.06356333744478507,
+              "convergence": 0.48297051541272146,
+              "envelope": 0.07894906739709598,
+              "harmonic": 0.2033234114873726,
+              "transient": 0.07809598933612057,
+              "modulation": 0.1109879040536092,
+              "tail": 0.02129838762946009
+            }
+          }
+        ],
+        "history": [
+          {
+            "evaluation": 1,
+            "stage": "Coarse",
+            "best": 0.6111984749345359,
+            "current": 0.6111984749345359
+          },
+          {
+            "evaluation": 432,
+            "stage": "Coarse",
+            "best": 0.243496247209897,
+            "current": 0.3105469223220751
+          },
+          {
+            "evaluation": 433,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.23701241173938942
+          },
+          {
+            "evaluation": 440,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.2805149483534516
+          },
+          {
+            "evaluation": 448,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.43372854429479546
+          },
+          {
+            "evaluation": 456,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.37937113731539707
+          },
+          {
+            "evaluation": 464,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3780711984906751
+          },
+          {
+            "evaluation": 472,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3711662334691509
+          },
+          {
+            "evaluation": 480,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.32103428807524503
+          },
+          {
+            "evaluation": 488,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.2892829953546124
+          },
+          {
+            "evaluation": 496,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3427621332547915
+          },
+          {
+            "evaluation": 504,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3840722986418965
+          },
+          {
+            "evaluation": 512,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.4620927960101085
+          },
+          {
+            "evaluation": 520,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3719699577128202
+          },
+          {
+            "evaluation": 528,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.2961539168945109
+          },
+          {
+            "evaluation": 536,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.25189887387163795
+          },
+          {
+            "evaluation": 544,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3107278067017031
+          },
+          {
+            "evaluation": 552,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.24725822217912768
+          },
+          {
+            "evaluation": 560,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.367620817285375
+          },
+          {
+            "evaluation": 568,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.4049793242977276
+          },
+          {
+            "evaluation": 576,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3480338133982369
+          },
+          {
+            "evaluation": 584,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.2741815156124603
+          },
+          {
+            "evaluation": 592,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.2445677730532891
+          },
+          {
+            "evaluation": 600,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.4006681142639283
+          },
+          {
+            "evaluation": 608,
+            "stage": "Coarse",
+            "best": 0.23701241173938942,
+            "current": 0.3915129856343479
+          },
+          {
+            "evaluation": 615,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.23701241173938942
+          },
+          {
+            "evaluation": 616,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.30231377085870215
+          },
+          {
+            "evaluation": 624,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.6384645052709752
+          },
+          {
+            "evaluation": 632,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.30231377085870215
+          },
+          {
+            "evaluation": 640,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.2511624984153625
+          },
+          {
+            "evaluation": 648,
+            "stage": "Envelopes",
+            "best": 0.23701241173938942,
+            "current": 0.4522894443539303
+          },
+          {
+            "evaluation": 656,
+            "stage": "Envelopes",
+            "best": 0.2273397403828962,
+            "current": 0.2273397403828962
+          },
+          {
+            "evaluation": 664,
+            "stage": "Envelopes",
+            "best": 0.2273397403828962,
+            "current": 0.3034345233078733
+          },
+          {
+            "evaluation": 672,
+            "stage": "Envelopes",
+            "best": 0.2273397403828962,
+            "current": 0.26474344782657705
+          },
+          {
+            "evaluation": 680,
+            "stage": "Envelopes",
+            "best": 0.2273397403828962,
+            "current": 0.4868084992178986
+          },
+          {
+            "evaluation": 687,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.22614310823891753
+          },
+          {
+            "evaluation": 688,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.25036943063326833
+          },
+          {
+            "evaluation": 696,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3234182109265218
+          },
+          {
+            "evaluation": 704,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.2724171037205129
+          },
+          {
+            "evaluation": 712,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3400562116416862
+          },
+          {
+            "evaluation": 720,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.27224020471165533
+          },
+          {
+            "evaluation": 728,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3088878961880003
+          },
+          {
+            "evaluation": 736,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.24733206200642815
+          },
+          {
+            "evaluation": 744,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3232159745032876
+          },
+          {
+            "evaluation": 752,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.2760474626276241
+          },
+          {
+            "evaluation": 760,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3070660714802713
+          },
+          {
+            "evaluation": 768,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.228086545496967
+          },
+          {
+            "evaluation": 776,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3387028376385534
+          },
+          {
+            "evaluation": 784,
+            "stage": "Envelopes",
+            "best": 0.22614310823891753,
+            "current": 0.3147850880019485
+          },
+          {
+            "evaluation": 791,
+            "stage": "Envelopes",
+            "best": 0.22570342937601945,
+            "current": 0.22570342937601945
+          },
+          {
+            "evaluation": 792,
+            "stage": "Envelopes",
+            "best": 0.22570342937601945,
+            "current": 0.3238518350154162
+          },
+          {
+            "evaluation": 799,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.22503122693917468
+          },
+          {
+            "evaluation": 800,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.23770222039616878
+          },
+          {
+            "evaluation": 808,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3694773520573162
+          },
+          {
+            "evaluation": 816,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.2896103408994112
+          },
+          {
+            "evaluation": 824,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3361919688948225
+          },
+          {
+            "evaluation": 832,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.24529426170326557
+          },
+          {
+            "evaluation": 840,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.39877534236670137
+          },
+          {
+            "evaluation": 848,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.24083722634277083
+          },
+          {
+            "evaluation": 856,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3148076507580265
+          },
+          {
+            "evaluation": 864,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.28617930752164117
+          },
+          {
+            "evaluation": 872,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3528652301337786
+          },
+          {
+            "evaluation": 880,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.2653867418707518
+          },
+          {
+            "evaluation": 888,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3518659643998825
+          },
+          {
+            "evaluation": 896,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.2728802876083181
+          },
+          {
+            "evaluation": 904,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.31202760774235966
+          },
+          {
+            "evaluation": 912,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.2833791727510429
+          },
+          {
+            "evaluation": 920,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.329919545711461
+          },
+          {
+            "evaluation": 928,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.24107732821562414
+          },
+          {
+            "evaluation": 936,
+            "stage": "Envelopes",
+            "best": 0.22503122693917468,
+            "current": 0.3087767186516862
+          },
+          {
+            "evaluation": 943,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.2234028994465426
+          },
+          {
+            "evaluation": 944,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.2268473038711023
+          },
+          {
+            "evaluation": 952,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.308314244196771
+          },
+          {
+            "evaluation": 960,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.23293990125495098
+          },
+          {
+            "evaluation": 968,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.34886269728911723
+          },
+          {
+            "evaluation": 976,
+            "stage": "Envelopes",
+            "best": 0.2234028994465426,
+            "current": 0.22711417539005807
+          },
+          {
+            "evaluation": 983,
+            "stage": "Envelopes",
+            "best": 0.22308336055138825,
+            "current": 0.22308336055138825
+          },
+          {
+            "evaluation": 984,
+            "stage": "Envelopes",
+            "best": 0.22308336055138825,
+            "current": 0.36020725873618453
+          },
+          {
+            "evaluation": 992,
+            "stage": "Envelopes",
+            "best": 0.22308336055138825,
+            "current": 0.23423051564852346
+          },
+          {
+            "evaluation": 993,
+            "stage": "Envelopes",
+            "best": 0.2155063982699224,
+            "current": 0.2155063982699224
+          },
+          {
+            "evaluation": 999,
+            "stage": "Envelopes",
+            "best": 0.21243946443321854,
+            "current": 0.21243946443321854
+          },
+          {
+            "evaluation": 1000,
+            "stage": "Envelopes",
+            "best": 0.21243946443321854,
+            "current": 0.3262538570297164
+          },
+          {
+            "evaluation": 1008,
+            "stage": "Envelopes",
+            "best": 0.21243946443321854,
+            "current": 0.24841863451174082
+          },
+          {
+            "evaluation": 1015,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.20736598609940085
+          },
+          {
+            "evaluation": 1016,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3002427165376546
+          },
+          {
+            "evaluation": 1024,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.27335190236480517
+          },
+          {
+            "evaluation": 1032,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.30772764153420606
+          },
+          {
+            "evaluation": 1040,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.21819146983819973
+          },
+          {
+            "evaluation": 1048,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.31113102104806767
+          },
+          {
+            "evaluation": 1056,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.325239402695457
+          },
+          {
+            "evaluation": 1064,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3081698764391244
+          },
+          {
+            "evaluation": 1072,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.27064452782311016
+          },
+          {
+            "evaluation": 1080,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.2984244574371339
+          },
+          {
+            "evaluation": 1088,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.2713408980893568
+          },
+          {
+            "evaluation": 1096,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.30499299267545293
+          },
+          {
+            "evaluation": 1104,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.23512173693372854
+          },
+          {
+            "evaluation": 1112,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3195838081168343
+          },
+          {
+            "evaluation": 1120,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.25705730012083344
+          },
+          {
+            "evaluation": 1128,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3064035685392359
+          },
+          {
+            "evaluation": 1136,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.24531722308095524
+          },
+          {
+            "evaluation": 1144,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3416889422270948
+          },
+          {
+            "evaluation": 1152,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.261371653823291
+          },
+          {
+            "evaluation": 1160,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.30423522334576986
+          },
+          {
+            "evaluation": 1168,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.2542938785695668
+          },
+          {
+            "evaluation": 1176,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3095917813290863
+          },
+          {
+            "evaluation": 1184,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.23553526982603107
+          },
+          {
+            "evaluation": 1192,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.3215679758982404
+          },
+          {
+            "evaluation": 1200,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.4516271257960524
+          },
+          {
+            "evaluation": 1208,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.31786834413310006
+          },
+          {
+            "evaluation": 1216,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.2704197991627227
+          },
+          {
+            "evaluation": 1224,
+            "stage": "Envelopes",
+            "best": 0.20736598609940085,
+            "current": 0.31079670954736477
+          },
+          {
+            "evaluation": 1229,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.20736598609940085
+          },
+          {
+            "evaluation": 1232,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.24349206595786496
+          },
+          {
+            "evaluation": 1240,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.3669489257623004
+          },
+          {
+            "evaluation": 1248,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.24349449258308106
+          },
+          {
+            "evaluation": 1256,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.294415220322209
+          },
+          {
+            "evaluation": 1264,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.2659988032023577
+          },
+          {
+            "evaluation": 1272,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.2944167298544581
+          },
+          {
+            "evaluation": 1280,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.24349206595786496
+          },
+          {
+            "evaluation": 1288,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.2944157242120473
+          },
+          {
+            "evaluation": 1296,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.26600589331998176
+          },
+          {
+            "evaluation": 1304,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.294415220322209
+          },
+          {
+            "evaluation": 1312,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.2659988032023577
+          },
+          {
+            "evaluation": 1320,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.2944167298544581
+          },
+          {
+            "evaluation": 1328,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.26600589331998176
+          },
+          {
+            "evaluation": 1336,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.294415220322209
+          },
+          {
+            "evaluation": 1344,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.24349206595786496
+          },
+          {
+            "evaluation": 1352,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.294392007399793
+          },
+          {
+            "evaluation": 1360,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.24349206595786496
+          },
+          {
+            "evaluation": 1368,
+            "stage": "Modulation",
+            "best": 0.20736598609940085,
+            "current": 0.29724743495505
+          },
+          {
+            "evaluation": 1373,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.20488215288867428
+          },
+          {
+            "evaluation": 1376,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.26778340386802607
+          },
+          {
+            "evaluation": 1384,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.294392007399793
+          },
+          {
+            "evaluation": 1392,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.24349206595786496
+          },
+          {
+            "evaluation": 1400,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.2958511666494496
+          },
+          {
+            "evaluation": 1408,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.2434972836160144
+          },
+          {
+            "evaluation": 1416,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.294415220322209
+          },
+          {
+            "evaluation": 1424,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.24357495809502736
+          },
+          {
+            "evaluation": 1432,
+            "stage": "Modulation",
+            "best": 0.20488215288867428,
+            "current": 0.294415220322209
+          },
+          {
+            "evaluation": 1434,
+            "stage": "Refine",
+            "best": 0.20419408091112964,
+            "current": 0.20419408091112964
+          },
+          {
+            "evaluation": 1440,
+            "stage": "Refine",
+            "best": 0.20418117498439473,
+            "current": 0.20418117498439473
+          },
+          {
+            "evaluation": 1442,
+            "stage": "Refine",
+            "best": 0.20361147909272387,
+            "current": 0.20361147909272387
+          },
+          {
+            "evaluation": 1448,
+            "stage": "Refine",
+            "best": 0.20355231260466275,
+            "current": 0.20355231260466275
+          },
+          {
+            "evaluation": 1456,
+            "stage": "Refine",
+            "best": 0.20342293945487486,
+            "current": 0.20342293945487486
+          },
+          {
+            "evaluation": 1460,
+            "stage": "Refine",
+            "best": 0.20129500044623994,
+            "current": 0.20129500044623994
+          },
+          {
+            "evaluation": 1464,
+            "stage": "Refine",
+            "best": 0.201184203387546,
+            "current": 0.201184203387546
+          },
+          {
+            "evaluation": 1469,
+            "stage": "Refine",
+            "best": 0.19873519989238841,
+            "current": 0.19873519989238841
+          },
+          {
+            "evaluation": 1472,
+            "stage": "Refine",
+            "best": 0.19873519989238841,
+            "current": 0.2241585913318781
+          },
+          {
+            "evaluation": 1480,
+            "stage": "Refine",
+            "best": 0.19873519989238841,
+            "current": 0.30988084572975966
+          },
+          {
+            "evaluation": 1485,
+            "stage": "Refine",
+            "best": 0.19868737310211917,
+            "current": 0.19868737310211917
+          },
+          {
+            "evaluation": 1488,
+            "stage": "Refine",
+            "best": 0.19868737310211917,
+            "current": 0.19868737310211917
+          },
+          {
+            "evaluation": 1496,
+            "stage": "Refine",
+            "best": 0.19868737310211917,
+            "current": 0.19868737310211917
+          },
+          {
+            "evaluation": 1498,
+            "stage": "Refine",
+            "best": 0.19769421333109977,
+            "current": 0.19769421333109977
+          },
+          {
+            "evaluation": 1504,
+            "stage": "Refine",
+            "best": 0.19769421333109977,
+            "current": 0.19879437633787142
+          },
+          {
+            "evaluation": 1506,
+            "stage": "Refine",
+            "best": 0.19745950685106048,
+            "current": 0.19745950685106048
+          },
+          {
+            "evaluation": 1512,
+            "stage": "Refine",
+            "best": 0.19745950685106048,
+            "current": 0.19745950685106048
+          },
+          {
+            "evaluation": 1520,
+            "stage": "Refine",
+            "best": 0.19745950685106048,
+            "current": 0.20897748075396147
+          },
+          {
+            "evaluation": 1527,
+            "stage": "Refine",
+            "best": 0.19736784895406093,
+            "current": 0.19736784895406093
+          },
+          {
+            "evaluation": 1528,
+            "stage": "Refine",
+            "best": 0.19736784895406093,
+            "current": 0.19736784895406093
+          },
+          {
+            "evaluation": 1529,
+            "stage": "Refine",
+            "best": 0.19619479004189785,
+            "current": 0.19619479004189785
+          },
+          {
+            "evaluation": 1530,
+            "stage": "Refine",
+            "best": 0.18961141084632324,
+            "current": 0.18961141084632324
+          },
+          {
+            "evaluation": 1534,
+            "stage": "Refine",
+            "best": 0.18934480639970663,
+            "current": 0.18934480639970663
+          },
+          {
+            "evaluation": 1536,
+            "stage": "Refine",
+            "best": 0.18934480639970663,
+            "current": 0.1949028972783402
+          },
+          {
+            "evaluation": 1537,
+            "stage": "Refine",
+            "best": 0.18624788265639267,
+            "current": 0.18624788265639267
+          },
+          {
+            "evaluation": 1541,
+            "stage": "Refine",
+            "best": 0.18616250575586127,
+            "current": 0.18616250575586127
+          },
+          {
+            "evaluation": 1542,
+            "stage": "Refine",
+            "best": 0.1854552757822501,
+            "current": 0.1854552757822501
+          },
+          {
+            "evaluation": 1544,
+            "stage": "Refine",
+            "best": 0.1854552757822501,
+            "current": 0.1854552757822501
+          },
+          {
+            "evaluation": 1548,
+            "stage": "Refine",
+            "best": 0.1854454905402049,
+            "current": 0.1854454905402049
+          },
+          {
+            "evaluation": 1552,
+            "stage": "Refine",
+            "best": 0.1854454905402049,
+            "current": 0.1854454905402049
+          },
+          {
+            "evaluation": 1559,
+            "stage": "Refine",
+            "best": 0.18462856652378146,
+            "current": 0.18462856652378146
+          },
+          {
+            "evaluation": 1560,
+            "stage": "Refine",
+            "best": 0.18462856652378146,
+            "current": 0.19941463882665833
+          },
+          {
+            "evaluation": 1564,
+            "stage": "Refine",
+            "best": 0.18454665090988412,
+            "current": 0.18454665090988412
+          },
+          {
+            "evaluation": 1567,
+            "stage": "Refine",
+            "best": 0.18222166778020707,
+            "current": 0.18222166778020707
+          },
+          {
+            "evaluation": 1568,
+            "stage": "Refine",
+            "best": 0.18222166778020707,
+            "current": 0.18589627471331727
+          },
+          {
+            "evaluation": 1574,
+            "stage": "Refine",
+            "best": 0.1810454793988979,
+            "current": 0.1810454793988979
+          },
+          {
+            "evaluation": 1576,
+            "stage": "Refine",
+            "best": 0.1810454793988979,
+            "current": 0.1891216364176638
+          },
+          {
+            "evaluation": 1584,
+            "stage": "Refine",
+            "best": 0.1810454793988979,
+            "current": 0.1811127297377966
+          },
+          {
+            "evaluation": 1585,
+            "stage": "Refine",
+            "best": 0.1810419358105472,
+            "current": 0.1810419358105472
+          },
+          {
+            "evaluation": 1592,
+            "stage": "Refine",
+            "best": 0.1810419358105472,
+            "current": 0.1810419358105472
+          },
+          {
+            "evaluation": 1600,
+            "stage": "Refine",
+            "best": 0.1810419358105472,
+            "current": 0.1810419358105472
+          },
+          {
+            "evaluation": 1608,
+            "stage": "Refine",
+            "best": 0.1810419358105472,
+            "current": 0.1810419358105472
+          },
+          {
+            "evaluation": 1616,
+            "stage": "Refine",
+            "best": 0.1810419358105472,
+            "current": 0.21513811094701119
+          },
+          {
+            "evaluation": 1617,
+            "stage": "Refine",
+            "best": 0.17890173640009197,
+            "current": 0.17890173640009197
+          },
+          {
+            "evaluation": 1620,
+            "stage": "Refine",
+            "best": 0.17370396168607666,
+            "current": 0.17370396168607666
+          },
+          {
+            "evaluation": 1624,
+            "stage": "Refine",
+            "best": 0.17370396168607666,
+            "current": 0.17370396168607666
+          },
+          {
+            "evaluation": 1626,
+            "stage": "Refine",
+            "best": 0.1731329417795409,
+            "current": 0.1731329417795409
+          },
+          {
+            "evaluation": 1632,
+            "stage": "Refine",
+            "best": 0.1731329417795409,
+            "current": 0.1731329417795409
+          },
+          {
+            "evaluation": 1640,
+            "stage": "Refine",
+            "best": 0.1731329417795409,
+            "current": 0.17603947071601647
+          },
+          {
+            "evaluation": 1648,
+            "stage": "Refine",
+            "best": 0.17188515676138558,
+            "current": 0.17188515676138558
+          },
+          {
+            "evaluation": 1656,
+            "stage": "Refine",
+            "best": 0.17188515676138558,
+            "current": 0.1734107825102423
+          },
+          {
+            "evaluation": 1664,
+            "stage": "Refine",
+            "best": 0.17188515676138558,
+            "current": 0.1725526613396229
+          },
+          {
+            "evaluation": 1672,
+            "stage": "Refine",
+            "best": 0.17188515676138558,
+            "current": 0.21342112661053703
+          },
+          {
+            "evaluation": 1680,
+            "stage": "Refine",
+            "best": 0.17188515676138558,
+            "current": 0.32670110843405753
+          },
+          {
+            "evaluation": 1685,
+            "stage": "Refine",
+            "best": 0.17156982332942894,
+            "current": 0.17156982332942894
+          },
+          {
+            "evaluation": 1688,
+            "stage": "Refine",
+            "best": 0.17156982332942894,
+            "current": 0.17156982332942894
+          },
+          {
+            "evaluation": 1696,
+            "stage": "Refine",
+            "best": 0.17156982332942894,
+            "current": 0.17156982332942894
+          },
+          {
+            "evaluation": 1704,
+            "stage": "Refine",
+            "best": 0.17156982332942894,
+            "current": 0.17280829418672247
+          },
+          {
+            "evaluation": 1706,
+            "stage": "Refine",
+            "best": 0.16991024384624148,
+            "current": 0.16991024384624148
+          },
+          {
+            "evaluation": 1712,
+            "stage": "Refine",
+            "best": 0.16991024384624148,
+            "current": 0.16991024384624148
+          },
+          {
+            "evaluation": 1720,
+            "stage": "Refine",
+            "best": 0.16991024384624148,
+            "current": 0.16991024384624148
+          },
+          {
+            "evaluation": 1728,
+            "stage": "Refine",
+            "best": 0.16991024384624148,
+            "current": 0.18500759071971842
+          },
+          {
+            "evaluation": 1736,
+            "stage": "Refine",
+            "best": 0.16991024384624148,
+            "current": 0.18358432982886963
+          },
+          {
+            "evaluation": 1742,
+            "stage": "Refine",
+            "best": 0.1693070682537374,
+            "current": 0.1693070682537374
+          },
+          {
+            "evaluation": 1744,
+            "stage": "Refine",
+            "best": 0.1693070682537374,
+            "current": 0.1693070682537374
+          },
+          {
+            "evaluation": 1752,
+            "stage": "Refine",
+            "best": 0.1693070682537374,
+            "current": 0.1693070682537374
+          },
+          {
+            "evaluation": 1756,
+            "stage": "Refine",
+            "best": 0.16901716440368048,
+            "current": 0.16901716440368048
+          },
+          {
+            "evaluation": 1760,
+            "stage": "Refine",
+            "best": 0.16901716440368048,
+            "current": 0.18049362835103633
+          },
+          {
+            "evaluation": 1764,
+            "stage": "Refine",
+            "best": 0.16826982247142383,
+            "current": 0.16826982247142383
+          },
+          {
+            "evaluation": 1768,
+            "stage": "Refine",
+            "best": 0.16826982247142383,
+            "current": 0.17055116010901722
+          },
+          {
+            "evaluation": 1776,
+            "stage": "Refine",
+            "best": 0.16826982247142383,
+            "current": 0.17736256227897657
+          },
+          {
+            "evaluation": 1784,
+            "stage": "Refine",
+            "best": 0.16826982247142383,
+            "current": 0.1684523052936844
+          },
+          {
+            "evaluation": 1785,
+            "stage": "Refine",
+            "best": 0.1679874413117794,
+            "current": 0.1679874413117794
+          },
+          {
+            "evaluation": 1792,
+            "stage": "Refine",
+            "best": 0.1679874413117794,
+            "current": 0.1679874413117794
+          },
+          {
+            "evaluation": 1800,
+            "stage": "Refine",
+            "best": 0.1679874413117794,
+            "current": 0.1679874413117794
+          },
+          {
+            "evaluation": 1806,
+            "stage": "Refine",
+            "best": 0.16794513153163793,
+            "current": 0.16794513153163793
+          },
+          {
+            "evaluation": 1808,
+            "stage": "Refine",
+            "best": 0.16794513153163793,
+            "current": 0.16794513153163793
+          },
+          {
+            "evaluation": 1816,
+            "stage": "Refine",
+            "best": 0.16794513153163793,
+            "current": 0.23133143672343742
+          },
+          {
+            "evaluation": 1824,
+            "stage": "Refine",
+            "best": 0.16794513153163793,
+            "current": 0.16794513153163793
+          },
+          {
+            "evaluation": 1832,
+            "stage": "Refine",
+            "best": 0.16794513153163793,
+            "current": 0.16794513153163793
+          },
+          {
+            "evaluation": 1834,
+            "stage": "Refine",
+            "best": 0.16787467097229317,
+            "current": 0.16787467097229317
+          },
+          {
+            "evaluation": 1840,
+            "stage": "Refine",
+            "best": 0.16787467097229317,
+            "current": 0.1680656130307949
+          },
+          {
+            "evaluation": 1841,
+            "stage": "Refine",
+            "best": 0.16785046471037837,
+            "current": 0.16785046471037837
+          },
+          {
+            "evaluation": 1842,
+            "stage": "Refine",
+            "best": 0.16748952410688,
+            "current": 0.16748952410688
+          },
+          {
+            "evaluation": 1848,
+            "stage": "Refine",
+            "best": 0.16748952410688,
+            "current": 0.16784665744213745
+          },
+          {
+            "evaluation": 1856,
+            "stage": "Refine",
+            "best": 0.16731607327601675,
+            "current": 0.16731607327601675
+          },
+          {
+            "evaluation": 1859,
+            "stage": "Refine",
+            "best": 0.1659902872298366,
+            "current": 0.1659902872298366
+          },
+          {
+            "evaluation": 1864,
+            "stage": "Refine",
+            "best": 0.165710292225837,
+            "current": 0.165710292225837
+          },
+          {
+            "evaluation": 1872,
+            "stage": "Refine",
+            "best": 0.165710292225837,
+            "current": 0.20450782601243073
+          },
+          {
+            "evaluation": 1874,
+            "stage": "Refine",
+            "best": 0.16492359830796058,
+            "current": 0.16492359830796058
+          },
+          {
+            "evaluation": 1880,
+            "stage": "Refine",
+            "best": 0.16492359830796058,
+            "current": 0.28428063169856743
+          },
+          {
+            "evaluation": 1885,
+            "stage": "Refine",
+            "best": 0.163823860422965,
+            "current": 0.163823860422965
+          },
+          {
+            "evaluation": 1888,
+            "stage": "Refine",
+            "best": 0.163823860422965,
+            "current": 0.163823860422965
+          },
+          {
+            "evaluation": 1896,
+            "stage": "Refine",
+            "best": 0.163823860422965,
+            "current": 0.163823860422965
+          },
+          {
+            "evaluation": 1904,
+            "stage": "Refine",
+            "best": 0.163823860422965,
+            "current": 0.16748409174127488
+          },
+          {
+            "evaluation": 1909,
+            "stage": "Refine",
+            "best": 0.1637839540835082,
+            "current": 0.1637839540835082
+          },
+          {
+            "evaluation": 1912,
+            "stage": "Refine",
+            "best": 0.1637839540835082,
+            "current": 0.1637839540835082
+          },
+          {
+            "evaluation": 1920,
+            "stage": "Refine",
+            "best": 0.1637839540835082,
+            "current": 0.1637839540835082
+          },
+          {
+            "evaluation": 1928,
+            "stage": "Refine",
+            "best": 0.1637839540835082,
+            "current": 0.18444652507206588
+          },
+          {
+            "evaluation": 1936,
+            "stage": "Refine",
+            "best": 0.1637839540835082,
+            "current": 0.17207774760584546
+          },
+          {
+            "evaluation": 1941,
+            "stage": "Refine",
+            "best": 0.16378262571168223,
+            "current": 0.16378262571168223
+          },
+          {
+            "evaluation": 1942,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.16336265587802298
+          },
+          {
+            "evaluation": 1944,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.16336265587802298
+          },
+          {
+            "evaluation": 1952,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.16336265587802298
+          },
+          {
+            "evaluation": 1960,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.23262256178478682
+          },
+          {
+            "evaluation": 1968,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.2443215025307466
+          },
+          {
+            "evaluation": 1976,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.17539524708691856
+          },
+          {
+            "evaluation": 1984,
+            "stage": "Refine",
+            "best": 0.16336265587802298,
+            "current": 0.16513562542519888
+          },
+          {
+            "evaluation": 1985,
+            "stage": "Refine",
+            "best": 0.1611498636933626,
+            "current": 0.1611498636933626
+          },
+          {
+            "evaluation": 1992,
+            "stage": "Refine",
+            "best": 0.1611498636933626,
+            "current": 0.1611498636933626
+          },
+          {
+            "evaluation": 2000,
+            "stage": "Refine",
+            "best": 0.1611498636933626,
+            "current": 0.1611498636933626
+          },
+          {
+            "evaluation": 2008,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.16113774699397285
+          },
+          {
+            "evaluation": 2016,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.3600609562362948
+          },
+          {
+            "evaluation": 2024,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.16113774699397285
+          },
+          {
+            "evaluation": 2032,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.16113774699397285
+          },
+          {
+            "evaluation": 2040,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.1611399842909671
+          },
+          {
+            "evaluation": 2048,
+            "stage": "Refine",
+            "best": 0.16113774699397285,
+            "current": 0.16268898547092148
+          }
+        ],
+        "evaluations": 2048,
+        "renders": 1866,
+        "generations": 87,
+        "elapsed_seconds": 195.4620945,
+        "refined": false,
+        "performance": {
+          "backend": "GPU · wgpu radix-2 STFT",
+          "adapter": "NVIDIA GeForce RTX 3050 Laptop GPU (Vulkan)",
+          "cpu_fft_ms": 1.189,
+          "gpu_fft_ms": 0.8966,
+          "gpu_dispatches": 5610,
+          "render_seconds": 157.27705450000005,
+          "resample_seconds": 27.878641100000056,
+          "features_seconds": 8.263620900000003,
+          "cache_hits": 182,
+          "cache_entries": 1866,
+          "note": ""
+        }
+      },
+      {
+        "status": "Completed",
+        "config": {
+          "mode": "Advanced",
+          "seed": 2612,
+          "evaluations": 1024,
+          "population": 16,
+          "candidates": 6,
+          "differential_weight": 0.7,
+          "crossover": 0.8,
+          "max_seconds": 8.0,
+          "fit_special_frequencies": false,
+          "weights": {
+            "log_spectral": 1.0,
+            "convergence": 1.0,
+            "envelope": 1.5,
+            "harmonic": 0.25,
+            "transient": 0.35,
+            "modulation": 0.25,
+            "tail": 0.5
+          },
+          "match_level": true,
+          "compute": "Auto"
+        },
+        "locks": [],
+        "initial": {
+          "operators": [
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 44,
+              "rs": 0,
+              "ar": 31,
+              "d1r": 0,
+              "d2r": 1,
+              "sl": 10,
+              "rr": 11,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 3,
+              "mul": 1,
+              "tl": 45,
+              "rs": 0,
+              "ar": 11,
+              "d1r": 12,
+              "d2r": 0,
+              "sl": 0,
+              "rr": 14,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 1,
+              "tl": 3,
+              "rs": 0,
+              "ar": 26,
+              "d1r": 16,
+              "d2r": 11,
+              "sl": 3,
+              "rr": 11,
+              "am": false,
+              "ssg": 0
+            },
+            {
+              "dt": 0,
+              "mul": 2,
+              "tl": 0,
+              "rs": 1,
+              "ar": 25,
+              "d1r": 15,
+              "d2r": 3,
+              "sl": 10,
+              "rr": 7,
+              "am": false,
+              "ssg": 0
+            }
+          ],
+          "channel": {
+            "algorithm": 5,
+            "feedback": 7,
+            "ams": 1,
+            "fms": 0,
+            "left": true,
+            "right": true
+          },
+          "global": {
+            "lfo_enabled": false,
+            "lfo_rate": 2
+          },
+          "channel3_special": null,
+          "audition": {
+            "velocity_tl_depth": [
+              0,
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        "context": {
+          "loss_version": 3,
+          "fingerprint": "d74aad076fb3167a",
+          "sample_rate": 24000,
+          "frames": 22734,
+          "reference_onset_seconds": 0.0,
+          "reference_start_seconds": 0.0,
+          "reference_end_seconds": 0.9472335600907029,
+          "reference_gain": 1.1056349277496338,
+          "pitch_hz": 246.96493272554923,
+          "audition": {
+            "note": 59,
+            "tuning_cents": 0.16321612746945235,
+            "velocity": 127,
+            "key_on_seconds": 0.9472335600907029,
+            "total_seconds": 0.9472335600907029,
+            "channel": 1,
+            "profile": "YM2612_DISCRETE",
+            "clock": "Ntsc"
+          }
+        },
+        "initial_loss": {
+          "recording_gain": 5.154908420257745,
+          "total": 0.15447640842974075,
+          "log_spectral": 0.06256331906802576,
+          "convergence": 0.47696195424340254,
+          "envelope": 0.05389337795912637,
+          "harmonic": 0.2554133494583811,
+          "transient": 0.08278426287207931,
+          "modulation": 0.11174998569058267,
+          "tail": 0.01615982968331212
+        },
+        "candidates": [
+          {
+            "evaluation": 923,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 11,
+                  "rr": 6,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          },
+          {
+            "evaluation": 927,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 7,
+                  "rr": 6,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          },
+          {
+            "evaluation": 928,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 15,
+                  "rr": 6,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          },
+          {
+            "evaluation": 929,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 11,
+                  "rr": 2,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          },
+          {
+            "evaluation": 930,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 11,
+                  "rr": 10,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 12,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          },
+          {
+            "evaluation": 933,
+            "stage": "Refine",
+            "instrument": {
+              "operators": [
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 41,
+                  "rs": 0,
+                  "ar": 23,
+                  "d1r": 0,
+                  "d2r": 1,
+                  "sl": 11,
+                  "rr": 6,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 3,
+                  "mul": 1,
+                  "tl": 44,
+                  "rs": 0,
+                  "ar": 11,
+                  "d1r": 4,
+                  "d2r": 0,
+                  "sl": 0,
+                  "rr": 14,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 1,
+                  "tl": 3,
+                  "rs": 0,
+                  "ar": 20,
+                  "d1r": 17,
+                  "d2r": 11,
+                  "sl": 3,
+                  "rr": 11,
+                  "am": false,
+                  "ssg": 0
+                },
+                {
+                  "dt": 0,
+                  "mul": 2,
+                  "tl": 2,
+                  "rs": 1,
+                  "ar": 20,
+                  "d1r": 15,
+                  "d2r": 1,
+                  "sl": 10,
+                  "rr": 7,
+                  "am": false,
+                  "ssg": 0
+                }
+              ],
+              "channel": {
+                "algorithm": 5,
+                "feedback": 7,
+                "ams": 1,
+                "fms": 0,
+                "left": true,
+                "right": true
+              },
+              "global": {
+                "lfo_enabled": false,
+                "lfo_rate": 2
+              },
+              "channel3_special": null,
+              "audition": {
+                "velocity_tl_depth": [
+                  0,
+                  0,
+                  0,
+                  0
+                ]
+              }
+            },
+            "loss": {
+              "recording_gain": 5.565831943500829,
+              "total": 0.14324667968680282,
+              "log_spectral": 0.06271215247136731,
+              "convergence": 0.4582261735637192,
+              "envelope": 0.04870561378365454,
+              "harmonic": 0.15509787055138047,
+              "transient": 0.07843161854182058,
+              "modulation": 0.10715625302403287,
+              "tail": 0.015470104773869758
+            }
+          }
+        ],
+        "history": [
+          {
+            "evaluation": 1,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 8,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.4366297369942699
+          },
+          {
+            "evaluation": 16,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.413485762722684
+          },
+          {
+            "evaluation": 24,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.28106877073918707
+          },
+          {
+            "evaluation": 32,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.4155449369131465
+          },
+          {
+            "evaluation": 40,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.4210369629600097
+          },
+          {
+            "evaluation": 48,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.47363110050401974
+          },
+          {
+            "evaluation": 56,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.49160568982319497
+          },
+          {
+            "evaluation": 64,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.3691737063879865
+          },
+          {
+            "evaluation": 72,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.4396910519722619
+          },
+          {
+            "evaluation": 80,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.3985723721943236
+          },
+          {
+            "evaluation": 88,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.29674395389922426
+          },
+          {
+            "evaluation": 96,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.38596568582775587
+          },
+          {
+            "evaluation": 104,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.33428362768623493
+          },
+          {
+            "evaluation": 112,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.42603305006522857
+          },
+          {
+            "evaluation": 120,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.18698752489719175
+          },
+          {
+            "evaluation": 128,
+            "stage": "Coarse",
+            "best": 0.15447640842974075,
+            "current": 0.4454074189961165
+          },
+          {
+            "evaluation": 130,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.14945736737639012
+          },
+          {
+            "evaluation": 136,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.1911991525325749
+          },
+          {
+            "evaluation": 144,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.3818180053294532
+          },
+          {
+            "evaluation": 152,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.37887588302971076
+          },
+          {
+            "evaluation": 160,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.2640312966939376
+          },
+          {
+            "evaluation": 168,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.17011016838372045
+          },
+          {
+            "evaluation": 176,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.299760880476319
+          },
+          {
+            "evaluation": 184,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.3949032324808905
+          },
+          {
+            "evaluation": 192,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.300790234440801
+          },
+          {
+            "evaluation": 200,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.1576279945255982
+          },
+          {
+            "evaluation": 208,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.15255714575126023
+          },
+          {
+            "evaluation": 216,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.18168637392019374
+          },
+          {
+            "evaluation": 224,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.35701552507735246
+          },
+          {
+            "evaluation": 232,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.15311469267730787
+          },
+          {
+            "evaluation": 240,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.15295312328270336
+          },
+          {
+            "evaluation": 248,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.16507558032012937
+          },
+          {
+            "evaluation": 256,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.3375935101626679
+          },
+          {
+            "evaluation": 264,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.3286438521855612
+          },
+          {
+            "evaluation": 272,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.15311469267730787
+          },
+          {
+            "evaluation": 280,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.1935255842678924
+          },
+          {
+            "evaluation": 288,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.18675755678834857
+          },
+          {
+            "evaluation": 296,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.1522408589987849
+          },
+          {
+            "evaluation": 304,
+            "stage": "Coarse",
+            "best": 0.14945736737639012,
+            "current": 0.15683169423912538
+          },
+          {
+            "evaluation": 308,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.14945736737639012
+          },
+          {
+            "evaluation": 312,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 320,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.17558977769095988
+          },
+          {
+            "evaluation": 328,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.26593217441781725
+          },
+          {
+            "evaluation": 336,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.33859393421125566
+          },
+          {
+            "evaluation": 344,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.19076006053251732
+          },
+          {
+            "evaluation": 352,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.25815983296545764
+          },
+          {
+            "evaluation": 360,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.1673992839441478
+          },
+          {
+            "evaluation": 368,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.17673064365357735
+          },
+          {
+            "evaluation": 376,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.29553497586570926
+          },
+          {
+            "evaluation": 384,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.24712279455979003
+          },
+          {
+            "evaluation": 392,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.2646030449688257
+          },
+          {
+            "evaluation": 400,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.15017237849858103
+          },
+          {
+            "evaluation": 408,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.16228540300429364
+          },
+          {
+            "evaluation": 416,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.18109229470383936
+          },
+          {
+            "evaluation": 424,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.18124901339577532
+          },
+          {
+            "evaluation": 432,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.15463388947680146
+          },
+          {
+            "evaluation": 440,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.15504663680531908
+          },
+          {
+            "evaluation": 448,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.14945736737639012
+          },
+          {
+            "evaluation": 456,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.1825737858619593
+          },
+          {
+            "evaluation": 464,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.22972555745755088
+          },
+          {
+            "evaluation": 472,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.2031911185106927
+          },
+          {
+            "evaluation": 480,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.2106730235217194
+          },
+          {
+            "evaluation": 488,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.2044409553989555
+          },
+          {
+            "evaluation": 496,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.1749485853954616
+          },
+          {
+            "evaluation": 504,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.15538722040360103
+          },
+          {
+            "evaluation": 512,
+            "stage": "Envelopes",
+            "best": 0.14945736737639012,
+            "current": 0.18267708485422612
+          },
+          {
+            "evaluation": 516,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.14912453314769397
+          },
+          {
+            "evaluation": 520,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.19850104029006452
+          },
+          {
+            "evaluation": 528,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.1919380325017865
+          },
+          {
+            "evaluation": 536,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.18528165377366881
+          },
+          {
+            "evaluation": 544,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.25085507370829896
+          },
+          {
+            "evaluation": 552,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.19176648452637746
+          },
+          {
+            "evaluation": 560,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.21507642026542886
+          },
+          {
+            "evaluation": 568,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.19235701824797177
+          },
+          {
+            "evaluation": 576,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.15043910854418527
+          },
+          {
+            "evaluation": 584,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.15404363385881992
+          },
+          {
+            "evaluation": 592,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.1838767621211399
+          },
+          {
+            "evaluation": 600,
+            "stage": "Envelopes",
+            "best": 0.14912453314769397,
+            "current": 0.21793421271867297
+          },
+          {
+            "evaluation": 608,
+            "stage": "Envelopes",
+            "best": 0.1488558582574275,
+            "current": 0.1488558582574275
+          },
+          {
+            "evaluation": 615,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.1488558582574275
+          },
+          {
+            "evaluation": 616,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 624,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.34322749189469737
+          },
+          {
+            "evaluation": 632,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.1685158840067638
+          },
+          {
+            "evaluation": 640,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.38495364745553357
+          },
+          {
+            "evaluation": 648,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 656,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.308850167432161
+          },
+          {
+            "evaluation": 664,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 672,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.308850167432161
+          },
+          {
+            "evaluation": 680,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.1685158840067638
+          },
+          {
+            "evaluation": 688,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.308850167432161
+          },
+          {
+            "evaluation": 696,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 704,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.308850167432161
+          },
+          {
+            "evaluation": 712,
+            "stage": "Modulation",
+            "best": 0.1488558582574275,
+            "current": 0.15447640842974075
+          },
+          {
+            "evaluation": 717,
+            "stage": "Refine",
+            "best": 0.1488558582574275,
+            "current": 0.15452843739329578
+          },
+          {
+            "evaluation": 720,
+            "stage": "Refine",
+            "best": 0.1488558582574275,
+            "current": 0.2071823020722375
+          },
+          {
+            "evaluation": 728,
+            "stage": "Refine",
+            "best": 0.1488558582574275,
+            "current": 0.1488558582574275
+          },
+          {
+            "evaluation": 736,
+            "stage": "Refine",
+            "best": 0.1488558582574275,
+            "current": 0.15114327632731697
+          },
+          {
+            "evaluation": 739,
+            "stage": "Refine",
+            "best": 0.14757209432178744,
+            "current": 0.14757209432178744
+          },
+          {
+            "evaluation": 744,
+            "stage": "Refine",
+            "best": 0.14757209432178744,
+            "current": 0.16807150498879
+          },
+          {
+            "evaluation": 747,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14608683220037205
+          },
+          {
+            "evaluation": 752,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.15126594907883414
+          },
+          {
+            "evaluation": 760,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.1569352342090932
+          },
+          {
+            "evaluation": 768,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14608683220037205
+          },
+          {
+            "evaluation": 776,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14608683220037205
+          },
+          {
+            "evaluation": 784,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14818875612265395
+          },
+          {
+            "evaluation": 792,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14648418222808512
+          },
+          {
+            "evaluation": 800,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.20019099301455304
+          },
+          {
+            "evaluation": 808,
+            "stage": "Refine",
+            "best": 0.14608683220037205,
+            "current": 0.14960284627013362
+          },
+          {
+            "evaluation": 809,
+            "stage": "Refine",
+            "best": 0.14577728467140996,
+            "current": 0.14577728467140996
+          },
+          {
+            "evaluation": 816,
+            "stage": "Refine",
+            "best": 0.14577728467140996,
+            "current": 0.25990908643321203
+          },
+          {
+            "evaluation": 817,
+            "stage": "Refine",
+            "best": 0.1453530731460749,
+            "current": 0.1453530731460749
+          },
+          {
+            "evaluation": 822,
+            "stage": "Refine",
+            "best": 0.14490197730290058,
+            "current": 0.14490197730290058
+          },
+          {
+            "evaluation": 824,
+            "stage": "Refine",
+            "best": 0.14490197730290058,
+            "current": 0.14490197730290058
+          },
+          {
+            "evaluation": 831,
+            "stage": "Refine",
+            "best": 0.14467973426613429,
+            "current": 0.14467973426613429
+          },
+          {
+            "evaluation": 832,
+            "stage": "Refine",
+            "best": 0.14467973426613429,
+            "current": 0.14490197730290058
+          },
+          {
+            "evaluation": 839,
+            "stage": "Refine",
+            "best": 0.14410406688876148,
+            "current": 0.14410406688876148
+          },
+          {
+            "evaluation": 840,
+            "stage": "Refine",
+            "best": 0.14410406688876148,
+            "current": 0.14467973426613429
+          },
+          {
+            "evaluation": 842,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.14345131879175083
+          },
+          {
+            "evaluation": 848,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.1450286380282233
+          },
+          {
+            "evaluation": 856,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.2093700382035539
+          },
+          {
+            "evaluation": 864,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.2780241382012239
+          },
+          {
+            "evaluation": 872,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.14345131879175083
+          },
+          {
+            "evaluation": 880,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.14345131879175083
+          },
+          {
+            "evaluation": 888,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.16366775650679294
+          },
+          {
+            "evaluation": 896,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.16268133737440627
+          },
+          {
+            "evaluation": 904,
+            "stage": "Refine",
+            "best": 0.14345131879175083,
+            "current": 0.1499814837374276
+          },
+          {
+            "evaluation": 910,
+            "stage": "Refine",
+            "best": 0.14326417877257583,
+            "current": 0.14326417877257583
+          },
+          {
+            "evaluation": 912,
+            "stage": "Refine",
+            "best": 0.14326417877257583,
+            "current": 0.1726060417119291
+          },
+          {
+            "evaluation": 920,
+            "stage": "Refine",
+            "best": 0.14326417877257583,
+            "current": 0.24338038417471955
+          },
+          {
+            "evaluation": 923,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14324667968680282
+          },
+          {
+            "evaluation": 928,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14324667968680282
+          },
+          {
+            "evaluation": 936,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14646620556014783
+          },
+          {
+            "evaluation": 944,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.2277128911715655
+          },
+          {
+            "evaluation": 952,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.15275112005742839
+          },
+          {
+            "evaluation": 960,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.1622953317236671
+          },
+          {
+            "evaluation": 968,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14324667968680282
+          },
+          {
+            "evaluation": 976,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14324667968680282
+          },
+          {
+            "evaluation": 984,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14646319180598424
+          },
+          {
+            "evaluation": 992,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14335748343786864
+          },
+          {
+            "evaluation": 1000,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.26332037018882304
+          },
+          {
+            "evaluation": 1008,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.1516194890011573
+          },
+          {
+            "evaluation": 1016,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.19582301679939348
+          },
+          {
+            "evaluation": 1024,
+            "stage": "Refine",
+            "best": 0.14324667968680282,
+            "current": 0.14327774160471177
+          }
+        ],
+        "evaluations": 1024,
+        "renders": 914,
+        "generations": 46,
+        "elapsed_seconds": 93.4220004,
+        "refined": true,
+        "performance": {
+          "backend": "CPU · rustfft",
+          "adapter": "NVIDIA GeForce RTX 3050 Laptop GPU (Vulkan)",
+          "cpu_fft_ms": 1.0987,
+          "gpu_fft_ms": 1.2223,
+          "gpu_dispatches": 12,
+          "render_seconds": 75.71632380000003,
+          "resample_seconds": 13.202577700000008,
+          "features_seconds": 2.697207499999997,
+          "cache_hits": 110,
+          "cache_entries": 914,
+          "note": "CPU escolhida pela medição: transferência e sincronização da GPU custam mais neste trecho"
+        }
+      }
+    ]
+  }
+}

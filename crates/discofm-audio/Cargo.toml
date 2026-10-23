@@ -1,0 +1,14 @@
+[package]
+name = "discofm-audio"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+discofm-chip.workspace = true
+discofm-engine.workspace = true
+cpal = "0.18.2"
+rtrb = "0.4"
+serde.workspace = true
+hound = "3.5"
+thiserror.workspace = true

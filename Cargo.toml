@@ -1,0 +1,121 @@
+[package]
+name = "DiscoFM"
+version.workspace = true
+edition = "2024"
+license = "GPL-3.0-only"
+description = "DiscoFM: YM2612/YM3438 instrument editor and inverse synthesis"
+default-run = "discofm"
+
+[[bin]]
+name = "discofm"
+path = "src/main.rs"
+
+[workspace]
+resolver = "3"
+members = ["crates/*"]
+default-members = ["."]
+
+[workspace.package]
+version = "1.0.0"
+edition = "2024"
+license = "GPL-3.0-only"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = { version = "1.0", features = ["float_roundtrip"] }
+thiserror = "2.0"
+discofm-chip = { path = "crates/discofm-chip" }
+discofm-engine = { path = "crates/discofm-engine" }
+discofm-audio = { path = "crates/discofm-audio" }
+discofm-reference = { path = "crates/discofm-reference" }
+discofm-formats = { path = "crates/discofm-formats" }
+discofm-analysis = { path = "crates/discofm-analysis" }
+discofm-ui = { path = "crates/discofm-ui" }
+discofm-soundfont = { path = "crates/discofm-soundfont" }
+discofm-fit = { path = "crates/discofm-fit" }
+discofm-log = { path = "crates/discofm-log" }
+
+[dependencies]
+discofm-cli = { path = "crates/discofm-cli" }
+
+[dev-dependencies]
+hound = "3.5"
+serde_json.workspace = true
+
+# ============================================================================
+# Development profile
+# ============================================================================
+#
+# This project keeps development builds debuggable while applying lightweight
+# optimization to project code and aggressive optimization to dependencies.
+
+[profile.dev]
+
+# Apply basic optimization to project code.
+# Improves runtime performance while preserving a good GDB debugging experience.
+opt-level = 1
+
+# Generate full debug information for GDB, backtraces, and development tooling.
+debug = true
+
+# Store debug information separately to reduce linking overhead during
+# development and test builds, particularly on Linux/macOS.
+split-debuginfo = "unpacked"
+
+# Preserve stack unwinding so panics remain inspectable through GDB
+# and standard Rust backtraces.
+panic = "unwind"
+
+# Keep integer overflow detection enabled during development and testing.
+overflow-checks = true
+
+
+# ============================================================================
+# Development dependencies
+# ============================================================================
+#
+# External dependencies are compiled with strong LLVM optimizations so that
+# dependency-heavy workloads do not unnecessarily bottleneck development runs,
+# while avoiding some of the more aggressive code growth of opt-level 3.
+
+[profile.dev.package."*"]
+
+# Optimize all external crates for strong runtime performance while keeping the
+# project's own development profile separate for faster iteration and debugging.
+opt-level = 2
+
+# External crates keep file:line backtraces and line breakpoints, but not full
+# type/variable information. Full dependency debug info made every test and
+# executable PDB ~230 MiB and filled the disk until MSVC link failed
+# (LNK1318 "LIMIT (12)", LNK1140). DiscoFM's own crates keep `debug = true`.
+debug = "line-tables-only"
+
+# ============================================================================
+# Release profile
+# ============================================================================
+#
+# This project prioritizes runtime performance while favoring the generally
+# balanced optimization behavior of LLVM opt-level 2 over more aggressive
+# opt-level 3 transformations.
+
+[profile.release]
+debug = false
+
+# Strong LLVM optimization focused on runtime performance while avoiding some
+# aggressive inlining and code expansion that can occur at opt-level 3.
+opt-level = 2
+
+# Whole-program optimization across crate boundaries.
+lto = "fat"
+
+# Maximize cross-unit optimization opportunities at the cost of compile time.
+codegen-units = 1
+
+# Abort immediately on panic, avoiding unwinding machinery in production builds.
+panic = "abort"
+
+# Remove symbols from final production binaries to reduce binary size.
+strip = true
+
+# Keep integer overflow checks enabled according to project safety policy.
+overflow-checks = true

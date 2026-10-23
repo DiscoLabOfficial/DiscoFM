@@ -1,0 +1,75 @@
+name: Bug report
+description: Report unexpected behavior or a crash in DiscoFM.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: DiscoFM version
+      description: Run discofm --version, or give the commit hash for a source build.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: operating-system
+    attributes:
+      label: Operating system and architecture
+      placeholder: Windows 11 24H2, x64
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Affected area
+      multiple: true
+      options:
+        - Editor and patch library
+        - Audio playback or MIDI
+        - Reference import and analysis
+        - Automatic fitting
+        - Session or instrument import/export
+        - Command-line tools
+        - Build or installation
+        - Other or unsure
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction steps
+      description: Include exact editor actions or CLI commands and the settings used.
+      placeholder: |
+        1. Open the session or reference file.
+        2. Set the relevant options.
+        3. Run the operation that fails.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: Describe the result the operation should produce.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Observed result
+      description: Describe the failure, including any error message or audible difference.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Relevant environment and settings
+      description: For audio problems, include the output device and sample rate. For fitting problems, include the compute mode, GPU/driver if used, seed and search settings. For source builds, include rustc --version.
+  - type: textarea
+    id: logs
+    attributes:
+      label: Log or crash report excerpt
+      description: Paste relevant output from the terminal, logs/discofm.log or a crash report. Logs may instead be under %LOCALAPPDATA%\DiscoFM\logs.
+      render: text
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Minimal example and screenshots
+      description: Attach a session, screenshot or synthetic audio example that demonstrates the problem. Include only files you may redistribute; commercial sample banks are not needed.

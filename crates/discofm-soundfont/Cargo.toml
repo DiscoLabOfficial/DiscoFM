@@ -1,0 +1,15 @@
+[package]
+name = "discofm-soundfont"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+discofm-audio.workspace = true
+discofm-analysis.workspace = true
+serde.workspace = true
+thiserror.workspace = true
+
+[dev-dependencies]
+hound = "3.5"
+serde_json.workspace = true

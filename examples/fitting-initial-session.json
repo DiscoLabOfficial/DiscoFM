@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "instrument": {
+    "operators": [
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 72,
+        "rs": 0,
+        "ar": 31,
+        "d1r": 8,
+        "d2r": 2,
+        "sl": 4,
+        "rr": 9,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 80,
+        "rs": 0,
+        "ar": 31,
+        "d1r": 8,
+        "d2r": 2,
+        "sl": 4,
+        "rr": 9,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 90,
+        "rs": 0,
+        "ar": 31,
+        "d1r": 8,
+        "d2r": 2,
+        "sl": 4,
+        "rr": 9,
+        "am": false,
+        "ssg": 0
+      },
+      {
+        "dt": 0,
+        "mul": 1,
+        "tl": 20,
+        "rs": 0,
+        "ar": 31,
+        "d1r": 8,
+        "d2r": 2,
+        "sl": 4,
+        "rr": 9,
+        "am": false,
+        "ssg": 0
+      }
+    ],
+    "channel": {
+      "algorithm": 0,
+      "feedback": 0,
+      "ams": 0,
+      "fms": 0,
+      "left": true,
+      "right": true
+    },
+    "global": {
+      "lfo_enabled": false,
+      "lfo_rate": 0
+    },
+    "channel3_special": null,
+    "audition": {
+      "velocity_tl_depth": [
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  },
+  "audition": {
+    "note": 69,
+    "velocity": 127,
+    "key_on_seconds": 0.18,
+    "total_seconds": 0.3,
+    "channel": 1,
+    "profile": "YM2612_DISCRETE",
+    "clock": "Ntsc"
+  },
+  "reference_path": null
+}

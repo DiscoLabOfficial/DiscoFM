@@ -1,0 +1,13 @@
+[package]
+name = "discofm-reference"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+discofm-chip.workspace = true
+discofm-engine.workspace = true
+serde.workspace = true
+discofm-audio.workspace = true
+rustfft = "6.4.1"
+
